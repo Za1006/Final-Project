@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39FAFD2AF6D7F9A0E7731F83 /* libPods-GetWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75C5F9F12D7377264A999C /* libPods-GetWell.a */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
 		AAC076031C18C94300FFCD71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076021C18C94300FFCD71 /* ViewController.swift */; };
 		AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC076041C18C94300FFCD71 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC075FD1C18C94300FFCD71 /* GetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC076001C18C94300FFCD71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC076021C18C94300FFCD71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		AAC0760A1C18C94300FFCD71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC0760D1C18C94300FFCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC0760F1C18C94300FFCD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC076171C18CCA400FFCD71 /* GetWell-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetWell-Bridging.h"; sourceTree = "<group>"; };
+		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FAFD2AF6D7F9A0E7731F83 /* libPods-GetWell.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DFC7C0FD61A5736350D6801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F75C5F9F12D7377264A999C /* libPods-GetWell.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAC075F41C18C94300FFCD71 = {
 			isa = PBXGroup;
 			children = (
 				AAC075FF1C18C94300FFCD71 /* GetWell */,
 				AAC075FE1C18C94300FFCD71 /* Products */,
+				DB20AC82844214A4ACE0C033 /* Pods */,
+				7DFC7C0FD61A5736350D6801 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
+				AAC076171C18CCA400FFCD71 /* GetWell-Bridging.h */,
 				AAC076021C18C94300FFCD71 /* ViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760A1C18C94300FFCD71 /* Assets.xcassets */,
@@ -67,6 +84,15 @@
 			path = GetWell;
 			sourceTree = "<group>";
 		};
+		DB20AC82844214A4ACE0C033 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */,
+				C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAC076121C18C94300FFCD71 /* Build configuration list for PBXNativeTarget "GetWell" */;
 			buildPhases = (
+				0FE903A3BD66969E247707FE /* Check Pods Manifest.lock */,
 				AAC075F91C18C94300FFCD71 /* Sources */,
 				AAC075FA1C18C94300FFCD71 /* Frameworks */,
 				AAC075FB1C18C94300FFCD71 /* Resources */,
+				9479074CA45F31728B4CD105 /* Embed Pods Frameworks */,
+				CF7E427B7430B4DDE90DE62F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FE903A3BD66969E247707FE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9479074CA45F31728B4CD105 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetWell/Pods-GetWell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7E427B7430B4DDE90DE62F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetWell/Pods-GetWell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAC075F91C18C94300FFCD71 /* Sources */ = {
@@ -250,23 +327,30 @@
 		};
 		AAC076131C18C94300FFCD71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GetWell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.GetWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GetWell/GetWell-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AAC076141C18C94300FFCD71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GetWell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.GetWell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GetWell/GetWell-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -289,6 +373,7 @@
 				AAC076141C18C94300FFCD71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
