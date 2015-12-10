@@ -103,6 +103,9 @@
                                     <segment title="15 Minutes"/>
                                     <segment title="20 Minutes"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeSortCriteria:" destination="mtC-ec-np1" eventType="touchUpInside" id="xyf-qG-OC6"/>
+                                </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-1H-FAE">
                                 <rect key="frame" x="24" y="443" width="556" height="137"/>
@@ -137,8 +140,16 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="8IY-da-FLE">
-                        <barButtonItem key="rightBarButtonItem" title="Set Reminder" id="ZdQ-A8-JhF"/>
+                        <barButtonItem key="rightBarButtonItem" title="Set Reminder" id="ZdQ-A8-JhF">
+                            <connections>
+                                <action selector="setNotificationTapped:" destination="mtC-ec-np1" id="s4m-YZ-l4o"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
+                        <outlet property="textView" destination="kyx-1H-FAE" id="pGM-jq-dgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

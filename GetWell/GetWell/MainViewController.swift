@@ -8,15 +8,23 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController
+{
+    
+    @IBOutlet weak var image: UIImage!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
+    
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -31,5 +39,20 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func setNotificationTapped()
+    {
+        
+    }
+    @IBAction func changeSortCriteria(sender: UISegmentedControl)
+    {
+        
+    }
+    
+    @IBAction func setNotificationTapped(sender: UIBarButtonItem)
+    {
+        
+    }
+// popover view to time picker
+    
 }
