@@ -27,7 +27,7 @@
 		AAC0760A1C18C94300FFCD71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC0760D1C18C94300FFCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC0760F1C18C94300FFCD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAC076171C18CCA400FFCD71 /* GetWell-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetWell-Bridging.h"; sourceTree = "<group>"; };
+		AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetWell-Bridging-Header.h"; sourceTree = "<group>"; };
 		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
-				AAC076171C18CCA400FFCD71 /* GetWell-Bridging.h */,
+				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AAC076021C18C94300FFCD71 /* ViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760A1C18C94300FFCD71 /* Assets.xcassets */,
