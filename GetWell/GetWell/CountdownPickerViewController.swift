@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  CountdownPickerViewController.swift
 //  GetWell
 //
 //  Created by Elizabeth Yeh on 12/10/15.
@@ -8,14 +8,10 @@
 
 import UIKit
 
-class MainViewController: UIViewController
+class CountdownPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
 {
+    var delegate:CountdownPickerDelegate?
     
-    @IBOutlet weak var image: UIImage!
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
-    
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -39,24 +35,5 @@ class MainViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
-    
-//    popover with pickerView format
-    func setReminderTapped()
-    {
-        
-    }
-    
-//    set timer,music will start, and "beep beep" sound will happend when time is up!
-    @IBAction func changeSortCriteria(sender: UISegmentedControl)
-    {
-        
-    }
-    
-    
-    @IBAction func setReminderTapped(sender: UIBarButtonItem)
-    {
-        
-    }
-    
 
 }

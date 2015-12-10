@@ -10,7 +10,13 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-class MediaPlayerViewController: UIViewController
+@objc protocol CountdownPickerDelegate
+{
+    func timerWasChosen(timerCount: Int)
+
+}
+
+class MediaPlayerViewController: UIViewController, CountdownPickerDelegate
 {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
@@ -23,6 +29,12 @@ class MediaPlayerViewController: UIViewController
     var songs = Array<Song>()
     var currentSong: Song?
     var nowPlaying: Bool = false
+    
+    var timer: NSTimer
+    var fiveMinutesCount = 5
+    var tenMinutesCount = 10
+    var fifteenMinutesCount = 15
+    var twentyMinutesCount = 20
 
     
     override func viewDidLoad()
@@ -44,17 +56,31 @@ class MediaPlayerViewController: UIViewController
     
     
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+   
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+       if segue.identifier == "ShowTimerCountdownSegue"
+       {
+        let countdownPickerVC = segue.destinationViewController as!CountdownPickerViewController
+        countdownPickerVC.delegate = self
+        }
     }
-    */
+// MARK: - Timer Picker Delegate
+    
+    func timerWasChosen(timerCount: Int)
+    {
+        
+    }
     
 //    MARK: - Action Handlers
+    
+    func timerCountDown()
+    {
+        
+    }
     
     @IBAction func playPauseTapped(sender: UIButton)
     {
