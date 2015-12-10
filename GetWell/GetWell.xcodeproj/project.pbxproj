@@ -15,6 +15,7 @@
 		AAC0760E1C18C94300FFCD71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */; };
 		AAC076191C190D4D00FFCD71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076181C190D4D00FFCD71 /* LoginViewController.swift */; };
 		AAC0761B1C19104D00FFCD71 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */; };
+		AAC0761D1C19D21600FFCD71 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC0761C1C19D21600FFCD71 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetWell-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAC076181C190D4D00FFCD71 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AAC0761C1C19D21600FFCD71 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760A1C18C94300FFCD71 /* Assets.xcassets */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
@@ -223,6 +226,7 @@
 				AAC0761B1C19104D00FFCD71 /* RegisterViewController.swift in Sources */,
 				AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */,
 				AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */,
+				AAC0761D1C19D21600FFCD71 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
