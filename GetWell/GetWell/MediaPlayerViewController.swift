@@ -28,10 +28,8 @@ class MediaPlayerViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        loadCurrentSong()
-        configurePlaylist()
-        setupAudioSession()
 
+        
 
 
 
@@ -56,73 +54,73 @@ class MediaPlayerViewController: UIViewController
     
    // MARK: - Action Handlers
     
-    @IBAction func playPauseTapped(sender: UIButton)
-    {
-        togglePlayback(!nowPlaying)
-    }
-    
-    @IBAction func skipForwardTapped(sender: UIButton)
-    {
-        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
-        let nextSong: Int
-        
-        if currentSongIndex + 1 >= songs.count
-        {
-            nextSong = 0
-        }
-        else
-        {
-            nextSong = currentSongIndex + 1
-        }
-        currentSong = songs[nextSong]
-        loadCurrentSong()
-        togglePlayback(true)
-    }
-    
-    @IBAction func skipBackTapped(sender: UIButton)
-    {
-        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-        if !nowPlaying
-        {
-            togglePlayback(true)
-        }
-    }
-    
-    func configurePlaylist()
-    {
-        
-    }
-    
-    func loadCurrentSong()
-    {
-        avQueuePlayer.removeAllItems()
-        if let song = currentSong
-        {
-            song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-            avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
-            songTitleLabel.text = song.title
-            artistLabel.text = song.artist
-//          countDownView.image = UIPickerView(time: song.countDownView)
-        }
-    }
-    
-    func setupAudioSession()
-    {
-        
-    }
-
-    func togglePlayback()
-    {
-        nowPlaying = play
-        if play
-        {
-            playPauseButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
-            avQueuePlayer.play()
-        }
-        else
-        {
-            playPauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
-            avQueuePlayer.pause()
-        }
-    }
+//    @IBAction func playPauseTapped(sender: UIButton)
+//    {
+//        togglePlayback(!nowPlaying)
+//    }
+//    
+//    @IBAction func skipForwardTapped(sender: UIButton)
+//    {
+//        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
+//        let nextSong: Int
+//        
+//        if currentSongIndex + 1 >= songs.count
+//        {
+//            nextSong = 0
+//        }
+//        else
+//        {
+//            nextSong = currentSongIndex + 1
+//        }
+//        currentSong = songs[nextSong]
+//        loadCurrentSong()
+//        togglePlayback(true)
+//    }
+//    
+//    @IBAction func skipBackTapped(sender: UIButton)
+//    {
+//        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
+//        if !nowPlaying
+//        {
+//            togglePlayback(true)
+//        }
+//    }
+//    
+//    func configurePlaylist()
+//    {
+//        
+//    }
+//    
+//    func loadCurrentSong()
+//    {
+//        avQueuePlayer.removeAllItems()
+//        if let song = currentSong
+//        {
+//            song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
+//            avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
+//            songTitleLabel.text = song.title
+//            artistLabel.text = song.artist
+////          countDownView.image = UIPickerView(time: song.countDownView)
+//        }
+//    }
+//    
+//    func setupAudioSession()
+//    {
+//        
+//    }
+//
+//    func togglePlayback()
+//    {
+//        nowPlaying = play
+//        if play
+//        {
+//            playPauseButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+//            avQueuePlayer.play()
+//        }
+//        else
+//        {
+//            playPauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
+//            avQueuePlayer.pause()
+//        }
+//    }
 }
