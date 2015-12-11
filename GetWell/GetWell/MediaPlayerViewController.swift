@@ -10,11 +10,7 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-//@objc protocol CountdownPickerDelegate
-//{
-//    func timerWasChosen(timerCount: Int)
-//
-//}
+
 
 class MediaPlayerViewController: UIViewController
 {
@@ -35,6 +31,8 @@ class MediaPlayerViewController: UIViewController
     var tenMinutesCount = 10
     var fifteenMinutesCount = 15
     var twentyMinutesCount = 20
+    
+    var delegate: MediaPlayerViewController?
 
     
     override func viewDidLoad()
@@ -57,25 +55,23 @@ class MediaPlayerViewController: UIViewController
     
 
 
-    // MARK: - Navigation
+// MARK: - Navigation
 
-   
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-       if segue.identifier == "ShowTimerCountdownSegue"
-       {
-        let countdownPickerVC = segue.destinationViewController as!CountdownPickerViewController
-        countdownPickerVC.delegate = self
-        }
-    }
+//   Don't need the segue just need the function
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+//    {
+//       if segue.identifier == "ShowTimerCountdownSegue"
+//       {
+//        let countdownPickerVC = segue.destinationViewController as!CountdownPickerViewController
+//        countdownPickerVC.delegate = self
+//        }
+//    }
 
     
 //    MARK: - Action Handlers
     
-    func timerWasChosen(timerCount: Int)
-    {
-        
-    }
+
     
     func timerCountDown()
     {

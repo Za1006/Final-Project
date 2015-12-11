@@ -7,15 +7,24 @@
 //
 
 import UIKit
+@objc protocol MediaPlayerViewDelegate
+{
+    func timerWasChosen(timerCount: Int)
 
-class MainViewController: UIViewController
+}
+
+class MainViewController: UIViewController, MediaPlayerViewDelegate
 {
     
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var TimerSegmentedControl: UISegmentedControl!
     
+    
+    var delegate: MediaPlayerViewController?
+    var timer: NSTimer?
 
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -30,18 +39,23 @@ class MainViewController: UIViewController
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
-//    popover with pickerView format
-    func setReminderTapped()
+// MARK: - Navigation
+    
+//When click on the timer (5, 10, 15..) it will segue to the MediaPlayerVC
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+//    {
+//       if segue.identifier == "ShowMediaCountdownSegue"
+//       {
+//        let mediaPlayerVC = segue.destinationViewController as!MediaPlayerViewController
+//        mediaPlayerVC.delegate = self
+//        }
+//    }
+//  
+    
+    
+    func timerWasChosen(timerCount: Int)
     {
         
     }
