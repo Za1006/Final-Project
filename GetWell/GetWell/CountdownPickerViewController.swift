@@ -10,6 +10,9 @@ import UIKit
 
 class CountdownPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
 {
+    
+    @IBOutlet var picker: UIPickerView!
+
     var delegate:CountdownPickerDelegate?
     
     override func viewDidLoad()

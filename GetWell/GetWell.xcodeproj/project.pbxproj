@@ -62,6 +62,7 @@
 		AAC076381C19E79A00FFCD71 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		AAC0763A1C19E85700FFCD71 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		AAC0763C1C1A47CB00FFCD71 /* CountdownPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownPickerViewController.swift; sourceTree = "<group>"; };
+		AAC0763E1C1B4AAB00FFCD71 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +129,7 @@
 		AAC076201C19E5B800FFCD71 /* ImageSets */ = {
 			isa = PBXGroup;
 			children = (
+				AAC0763E1C1B4AAB00FFCD71 /* digital-7.ttf */,
 				AAC0760A1C18C94300FFCD71 /* Assets.xcassets */,
 			);
 			name = ImageSets;
