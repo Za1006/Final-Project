@@ -10,13 +10,13 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-@objc protocol CountdownPickerDelegate
-{
-    func timerWasChosen(timerCount: Int)
+//@objc protocol CountdownPickerDelegate
+//{
+//    func timerWasChosen(timerCount: Int)
+//
+//}
 
-}
-
-class MediaPlayerViewController: UIViewController, CountdownPickerDelegate
+class MediaPlayerViewController: UIViewController
 {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
@@ -68,14 +68,14 @@ class MediaPlayerViewController: UIViewController, CountdownPickerDelegate
         countdownPickerVC.delegate = self
         }
     }
-// MARK: - Timer Picker Delegate
+
+    
+//    MARK: - Action Handlers
     
     func timerWasChosen(timerCount: Int)
     {
         
     }
-    
-//    MARK: - Action Handlers
     
     func timerCountDown()
     {
