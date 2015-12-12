@@ -30,6 +30,7 @@
 		AAC076371C19E5F700FFCD71 /* tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AAC0762C1C19E5F700FFCD71 /* tomorrow.mp3 */; };
 		AAC076391C19E79A00FFCD71 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076381C19E79A00FFCD71 /* MediaPlayerViewController.swift */; };
 		AAC0763B1C19E85700FFCD71 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC0763A1C19E85700FFCD71 /* Songs.swift */; };
+		AAC076401C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC0763F1C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		AAC076381C19E79A00FFCD71 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		AAC0763A1C19E85700FFCD71 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		AAC0763E1C1B4AAB00FFCD71 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		AAC0763F1C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
+				AAC0763F1C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift */,
 				AAC076381C19E79A00FFCD71 /* MediaPlayerViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
@@ -300,6 +303,7 @@
 				AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */,
 				AAC0763B1C19E85700FFCD71 /* Songs.swift in Sources */,
 				AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */,
+				AAC076401C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift in Sources */,
 				AAC076391C19E79A00FFCD71 /* MediaPlayerViewController.swift in Sources */,
 				AAC0761D1C19D21600FFCD71 /* MainViewController.swift in Sources */,
 			);
