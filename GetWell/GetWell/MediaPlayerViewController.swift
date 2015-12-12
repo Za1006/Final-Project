@@ -71,12 +71,6 @@ class MediaPlayerViewController: UIViewController
     
 //    MARK: - Action Handlers
     
-
-    
-    func timerCountDown()
-    {
-        
-    }
     
     @IBAction func playPauseTapped(sender: UIButton)
     {

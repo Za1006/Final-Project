@@ -60,6 +60,11 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate
         
     }
     
+    func timerCountDown()
+    {
+        
+    }
+    
 //    set timer,music will start, and "beep beep" sound will happend when time is up!
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
