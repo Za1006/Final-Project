@@ -10,7 +10,6 @@
 		39FAFD2AF6D7F9A0E7731F83 /* libPods-GetWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75C5F9F12D7377264A999C /* libPods-GetWell.a */; };
 		4C0700881C1A39630092688C /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */; };
 		4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0700891C1A39EB0092688C /* hypnosis.jpg */; };
-		4C5D1A151C1BD150003C5294 /* Michael.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5D1A141C1BD150003C5294 /* Michael.storyboard */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
 		AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC076041C18C94300FFCD71 /* Main.storyboard */; };
 		AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAC076071C18C94300FFCD71 /* GetWell.xcdatamodeld */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		4C0700891C1A39EB0092688C /* hypnosis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hypnosis.jpg; sourceTree = "<group>"; };
-		4C5D1A141C1BD150003C5294 /* Michael.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Michael.storyboard; sourceTree = "<group>"; };
 		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC075FD1C18C94300FFCD71 /* GetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +108,6 @@
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
-				4C5D1A141C1BD150003C5294 /* Michael.storyboard */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
 				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
@@ -232,7 +229,6 @@
 				AAC076331C19E5F700FFCD71 /* bensound-november.mp3 in Resources */,
 				AAC0761F1C19DCA100FFCD71 /* Simple_Meditation_Step.docx in Resources */,
 				4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */,
-				4C5D1A151C1BD150003C5294 /* Michael.storyboard in Resources */,
 				AAC0760B1C18C94300FFCD71 /* Assets.xcassets in Resources */,
 				AAC076311C19E5F700FFCD71 /* bensound-india.mp3 in Resources */,
 				AAC076361C19E5F700FFCD71 /* bensound-slowmotion.mp3 in Resources */,
