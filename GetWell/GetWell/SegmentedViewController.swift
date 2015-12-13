@@ -20,6 +20,7 @@ class SegmentedViewController: UIViewController,MediaPlayerViewDelegate
 
 
     var timer: NSTimer?
+    var originalCount = 120
 
 
     override func viewDidLoad()
@@ -53,7 +54,8 @@ class SegmentedViewController: UIViewController,MediaPlayerViewDelegate
 
     func timerWasChosen(timerCount: Int)
     {
-        
+//        originalCount = timerCount
+//        countLabel.text = "\(timerCount)"
     }
     
   
