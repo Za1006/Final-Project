@@ -18,7 +18,6 @@ class MediaPlayerViewController: UIViewController
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var countDownView: UIPickerView!
-    
     @IBOutlet var playPauseButton: UIButton!
     
     let avQueuePlayer = AVQueuePlayer()
@@ -188,3 +187,4 @@ class MediaPlayerViewController: UIViewController
         }
     }
 }
+
