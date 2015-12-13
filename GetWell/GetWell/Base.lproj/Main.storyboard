@@ -105,7 +105,6 @@
                                 </segments>
                                 <connections>
                                     <action selector="changeSortCriteria:" destination="mtC-ec-np1" eventType="touchUpInside" id="xyf-qG-OC6"/>
-                                    <segue destination="Vb6-af-UN0" kind="show" id="pu3-j9-dFA"/>
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-1H-FAE">
@@ -151,7 +150,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
                         <outlet property="textView" destination="kyx-1H-FAE" id="pGM-jq-dgd"/>
                     </connections>
                 </viewController>
@@ -270,24 +268,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1k-WC-c9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1662" y="353"/>
-        </scene>
-        <!--Media Player View Controller-->
-        <scene sceneID="fJE-1A-Gb8">
-            <objects>
-                <viewController id="Vb6-af-UN0" customClass="MediaPlayerViewController" customModule="GetWell" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nnD-Qs-9SM"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZKt-st-3eh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8z0-J0-mI6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NBU-fZ-bjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1656" y="1003"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Eb-sI-jjC">
