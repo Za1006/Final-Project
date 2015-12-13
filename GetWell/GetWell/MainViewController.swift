@@ -56,11 +56,11 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
 //    {
 //       if segue.identifier == "ShowMediaCountdownSegue"
 //       {
-//        let mediaPlayerVC = segue.destinationViewController as!MediaPlayerViewController
+//        let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
 //        mediaPlayerVC.delegate = self
 //        }
 //    }
-//  
+//
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "SetReminderSegue"
