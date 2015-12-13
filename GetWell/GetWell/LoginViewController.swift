@@ -49,7 +49,7 @@ class LoginViewController: UIViewController
                 if user != nil
                 {
                     print("login successful")
-                    self.performSegueWithIdentifier("GetWellViewController", sender: self)
+                    self.performSegueWithIdentifier("ShowMainViewSegue", sender: self)
                 }
                 else
                 {

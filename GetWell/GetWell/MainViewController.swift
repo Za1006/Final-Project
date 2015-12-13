@@ -21,6 +21,9 @@ import UIKit
 class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPresentationControllerDelegate
 {
     
+    var delegate: MediaPlayerViewController?
+
+    
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimerSegmentedControl: UISegmentedControl!
@@ -29,7 +32,6 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
 
     
     
-    var delegate: MediaPlayerViewController?
     var timer: NSTimer?
 
     
@@ -56,11 +58,11 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
 //    {
 //       if segue.identifier == "ShowMediaCountdownSegue"
 //       {
-//        let mediaPlayerVC = segue.destinationViewController as!MediaPlayerViewController
+//        let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
 //        mediaPlayerVC.delegate = self
 //        }
 //    }
-//  
+//
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "SetReminderSegue"

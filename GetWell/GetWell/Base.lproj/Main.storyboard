@@ -105,7 +105,6 @@
                                 </segments>
                                 <connections>
                                     <action selector="changeSortCriteria:" destination="mtC-ec-np1" eventType="touchUpInside" id="xyf-qG-OC6"/>
-                                    <segue destination="Vb6-af-UN0" kind="show" id="pu3-j9-dFA"/>
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-1H-FAE">
@@ -144,17 +143,61 @@
                         <barButtonItem key="rightBarButtonItem" title="Set Reminder" id="ZdQ-A8-JhF">
                             <connections>
                                 <action selector="setNotificationTapped:" destination="mtC-ec-np1" id="s4m-YZ-l4o"/>
+                                <segue destination="n5T-Fw-CVZ" kind="popoverPresentation" identifier="SetReminderSegue" popoverAnchorBarButtonItem="ZdQ-A8-JhF" id="2gP-Ia-a82">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
                         <outlet property="textView" destination="kyx-1H-FAE" id="pGM-jq-dgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928" y="1021"/>
+        </scene>
+        <!--Set Reminder Pop Over View Controller-->
+        <scene sceneID="9YH-eH-JBC">
+            <objects>
+                <viewController id="n5T-Fw-CVZ" customClass="SetReminderPopOverViewController" customModule="GetWell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nik-dK-SuC"/>
+                        <viewControllerLayoutGuide type="bottom" id="o2P-7j-wSF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gYF-eP-NxP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-vI-XlK">
+                                <rect key="frame" x="0.0" y="20" width="600" height="540"/>
+                                <date key="date" timeIntervalSinceReferenceDate="471651472.37314999">
+                                    <!--2015-12-12 22:17:52 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHP-vI-8cp">
+                                <rect key="frame" x="282" y="570" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="33Z-vI-XlK" firstAttribute="leading" secondItem="gYF-eP-NxP" secondAttribute="leading" id="BVm-YJ-jIp"/>
+                            <constraint firstItem="bHP-vI-8cp" firstAttribute="centerX" secondItem="33Z-vI-XlK" secondAttribute="centerX" id="LnZ-cJ-74D"/>
+                            <constraint firstAttribute="trailing" secondItem="33Z-vI-XlK" secondAttribute="trailing" id="Seu-gU-xMT"/>
+                            <constraint firstItem="o2P-7j-wSF" firstAttribute="top" secondItem="33Z-vI-XlK" secondAttribute="bottom" constant="40" id="Yph-NP-N6J"/>
+                            <constraint firstItem="33Z-vI-XlK" firstAttribute="top" secondItem="nik-dK-SuC" secondAttribute="bottom" id="ji1-b6-o5o"/>
+                            <constraint firstItem="o2P-7j-wSF" firstAttribute="top" secondItem="bHP-vI-8cp" secondAttribute="bottom" id="mwL-hW-qfR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="33Z-vI-XlK" id="zOF-Po-2sO"/>
+                        <outlet property="doneButton" destination="bHP-vI-8cp" id="6Bh-2L-VgO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8n-Qd-mmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="1756"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="802-Y1-qlY">
@@ -225,24 +268,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1k-WC-c9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1662" y="353"/>
-        </scene>
-        <!--Media Player View Controller-->
-        <scene sceneID="fJE-1A-Gb8">
-            <objects>
-                <viewController id="Vb6-af-UN0" customClass="MediaPlayerViewController" customModule="GetWell" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nnD-Qs-9SM"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZKt-st-3eh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8z0-J0-mI6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NBU-fZ-bjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1656" y="1003"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Eb-sI-jjC">
