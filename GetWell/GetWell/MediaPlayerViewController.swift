@@ -11,13 +11,14 @@ import MediaPlayer
 import AVFoundation
 
 
-class MediaPlayerViewController: UIViewController
+class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
-    @IBOutlet var countDownView: UIPickerView!
+    @IBOutlet var countDownPickerView: UIDatePicker!
     @IBOutlet var playPauseButton: UIButton!
+    
     
     let avQueuePlayer = AVQueuePlayer()
     var songs = Array<Song>()
@@ -30,7 +31,7 @@ class MediaPlayerViewController: UIViewController
     var fifteenMinutesCount = 15
     var twentyMinutesCount = 20
     
-    var delegate: MediaPlayerViewController?
+    var delegate: MediaPlayerViewDelegate?
 
     
     override func viewDidLoad()
@@ -44,16 +45,33 @@ class MediaPlayerViewController: UIViewController
 
 
     }
+    
+//    override func viewWillDisappear(animated: Bool)
+//    {
+//        super.viewWillDisappear(animated)
+//        delegate?.timerWasChosen(60-picker.selectedRowInComponent(0))
+//    }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
+//    picker View for CountDownPicker in the MediaPlayer
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
+    {
+        return 1
+    }
     
-
-
-// MARK: - Navigation
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    {
+        return 20
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    {
+        return "\(20-row)"
+    }// MARK: - Navigation
 
 //   Don't need the segue just need the function
     
@@ -144,8 +162,8 @@ class MediaPlayerViewController: UIViewController
         {
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
-            songTitleLabel.text = song.title
-            artistLabel.text = song.artist
+            songTitleLabel.text? = song.title
+            artistLabel.text? = song.artist
 //          countDownView.image = UIPickerView(time: song.countDownView)
         }
     }

@@ -105,6 +105,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="changeSortCriteria:" destination="mtC-ec-np1" eventType="touchUpInside" id="xyf-qG-OC6"/>
+                                    <segue destination="UyC-Ht-59p" kind="show" identifier="ShowCountdownSegue" id="EAQ-J2-x1c"/>
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-1H-FAE">
@@ -142,7 +143,6 @@
                     <navigationItem key="navigationItem" id="8IY-da-FLE">
                         <barButtonItem key="rightBarButtonItem" title="Set Reminder" id="ZdQ-A8-JhF">
                             <connections>
-                                <action selector="setNotificationTapped:" destination="mtC-ec-np1" id="s4m-YZ-l4o"/>
                                 <segue destination="n5T-Fw-CVZ" kind="popoverPresentation" identifier="SetReminderSegue" popoverAnchorBarButtonItem="ZdQ-A8-JhF" id="2gP-Ia-a82">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
@@ -150,12 +150,50 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="TimerSegmentedControl" destination="A8E-Nn-O1a" id="td9-ws-qKI"/>
+                        <outlet property="setReminder" destination="ZdQ-A8-JhF" id="oqF-6E-J75"/>
                         <outlet property="textView" destination="kyx-1H-FAE" id="pGM-jq-dgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928" y="1021"/>
+        </scene>
+        <!--Media Player View Controller-->
+        <scene sceneID="3AH-4a-uvq">
+            <objects>
+                <viewController id="UyC-Ht-59p" customClass="MediaPlayerViewController" customModule="GetWell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4OF-DW-bcu"/>
+                        <viewControllerLayoutGuide type="bottom" id="det-ah-w5w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uLj-r7-SwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OpT-yV-mnz">
+                                <rect key="frame" x="69" y="383" width="463" height="44"/>
+                                <date key="date" timeIntervalSinceReferenceDate="471722101.24223298">
+                                    <!--2015-12-13 17:55:01 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OpT-yV-mnz" firstAttribute="top" secondItem="4OF-DW-bcu" secondAttribute="bottom" constant="363" id="H69-6D-dgM"/>
+                            <constraint firstItem="det-ah-w5w" firstAttribute="top" secondItem="OpT-yV-mnz" secondAttribute="bottom" constant="173" id="UYE-nx-j5z"/>
+                            <constraint firstItem="OpT-yV-mnz" firstAttribute="leading" secondItem="uLj-r7-SwJ" secondAttribute="leading" constant="69" id="ZOy-PX-jV3"/>
+                            <constraint firstItem="OpT-yV-mnz" firstAttribute="centerX" secondItem="uLj-r7-SwJ" secondAttribute="centerX" id="ZXS-Aw-Rub"/>
+                            <constraint firstAttribute="trailing" secondItem="OpT-yV-mnz" secondAttribute="trailing" constant="68" id="tY7-ZI-cE0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countDownPickerView" destination="OpT-yV-mnz" id="41E-wd-NrP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27X-ch-h7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="1021"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="9YH-eH-JBC">

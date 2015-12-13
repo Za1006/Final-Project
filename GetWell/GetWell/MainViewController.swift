@@ -8,17 +8,13 @@
 
 import UIKit
 
-@objc protocol MediaPlayerViewDelegate
-{
-    func timerWasChosen(timerCount: Int)
 
-}
 @objc protocol DatePickerDelegate
 {
     func dateWasChosen(date: NSDate)
 }
 
-class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPresentationControllerDelegate
+class MainViewController: UIViewController,UIPopoverPresentationControllerDelegate
 {
     
     var delegate: MediaPlayerViewController?
@@ -26,13 +22,14 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
     
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var setReminder: UIBarButtonItem!
     @IBOutlet weak var TimerSegmentedControl: UISegmentedControl!
     
     var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
 
     
     
-    var timer: NSTimer?
+//    var timer: NSTimer?
 
     
     override func viewDidLoad()
@@ -52,17 +49,7 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
     
 // MARK: - Navigation
     
-//When click on the timer (5, 10, 15..) it will segue to the MediaPlayerVC
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-//    {
-//       if segue.identifier == "ShowMediaCountdownSegue"
-//       {
-//        let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
-//        mediaPlayerVC.delegate = self
-//        }
-//    }
-//
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "SetReminderSegue"
@@ -93,32 +80,20 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
         return String(formattedTime)
     }
 
+   
     
-    func setNotificationTapped()
-    {
-        
-    }
-    func timerWasChosen(timerCount: Int)
-    {
-        
-    }
-//
-//    func timerCountDown()
+//    set timer,music will start, and "beep beep" sound will happend when time is up!
+    
+    
+//    @IBAction func setNotificationTapped(sender: UIBarButtonItem)
 //    {
 //        
 //    }
     
-//    set timer,music will start, and "beep beep" sound will happend when time is up!
+    
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
         
     }
-    
-    
-    @IBAction func setNotificationTapped(sender: UIBarButtonItem)
-    {
-        
-    }
-    
 
 }
