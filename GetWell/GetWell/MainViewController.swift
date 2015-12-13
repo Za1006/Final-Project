@@ -21,6 +21,9 @@ import UIKit
 class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPresentationControllerDelegate
 {
     
+    var delegate: MediaPlayerViewController?
+
+    
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimerSegmentedControl: UISegmentedControl!
@@ -29,7 +32,6 @@ class MainViewController: UIViewController, MediaPlayerViewDelegate,UIPopoverPre
 
     
     
-    var delegate: MediaPlayerViewController?
     var timer: NSTimer?
 
     

@@ -11,7 +11,6 @@ import MediaPlayer
 import AVFoundation
 
 
-
 class MediaPlayerViewController: UIViewController
 {
     @IBOutlet var timeLabel: UILabel!
@@ -25,7 +24,7 @@ class MediaPlayerViewController: UIViewController
     var currentSong: Song?
     var nowPlaying: Bool = false
     
-    var timer: NSTimer
+    var timer: NSTimer?
     var fiveMinutesCount = 5
     var tenMinutesCount = 10
     var fifteenMinutesCount = 15
