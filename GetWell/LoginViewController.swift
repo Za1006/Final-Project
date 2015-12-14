@@ -10,19 +10,6 @@ import UIKit
 
 class LoginViewController: UIViewController
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    let x = "green"
-=======
-    var peoples = 3
-    var samsBeacons = 10
-    var blue = String?
-=======
-    var red: String?
->>>>>>> Elizabeth-Branch
-
->>>>>>> origin/master
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
