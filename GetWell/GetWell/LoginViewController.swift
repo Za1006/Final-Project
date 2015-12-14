@@ -11,7 +11,11 @@ import UIKit
 class LoginViewController: UIViewController
 {
     
+<<<<<<< HEAD
     var mike = ""
+=======
+    var git: String?
+>>>>>>> Elizabeth-Branch
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

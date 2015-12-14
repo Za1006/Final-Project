@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39FAFD2AF6D7F9A0E7731F83 /* libPods-GetWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75C5F9F12D7377264A999C /* libPods-GetWell.a */; };
+		AA36F4211C1DEBC100CA21F6 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4201C1DEBC100CA21F6 /* SegmentedViewController.swift */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
 		AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC076041C18C94300FFCD71 /* Main.storyboard */; };
 		AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAC076071C18C94300FFCD71 /* GetWell.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
+		AA36F4201C1DEBC100CA21F6 /* SegmentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
 		AAC075FD1C18C94300FFCD71 /* GetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC076001C18C94300FFCD71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC076051C18C94300FFCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC0763F1C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift */,
+				AA36F4201C1DEBC100CA21F6 /* SegmentedViewController.swift */,
 				AAC076381C19E79A00FFCD71 /* MediaPlayerViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
@@ -301,6 +304,7 @@
 				AAC076191C190D4D00FFCD71 /* LoginViewController.swift in Sources */,
 				AAC0761B1C19104D00FFCD71 /* RegisterViewController.swift in Sources */,
 				AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */,
+				AA36F4211C1DEBC100CA21F6 /* SegmentedViewController.swift in Sources */,
 				AAC0763B1C19E85700FFCD71 /* Songs.swift in Sources */,
 				AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */,
 				AAC076401C1CCFC600FFCD71 /* SetReminderPopOverViewController.swift in Sources */,
