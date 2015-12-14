@@ -84,7 +84,6 @@
 		4C5D1A161C1F40E0003C5294 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 			);
@@ -138,6 +137,7 @@
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
 				AA36F4221C1F27AE00CA21F6 /* SegmentedViewController.swift */,
 				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
+				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
 				AAC076211C19E5F700FFCD71 /* MusicFile */,
