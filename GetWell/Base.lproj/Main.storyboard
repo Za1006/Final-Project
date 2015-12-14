@@ -53,6 +53,14 @@
                                     <outlet property="delegate" destination="d7q-aW-mCW" id="Rde-zq-uWt"/>
                                 </connections>
                             </textField>
+<<<<<<< HEAD
+=======
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s05-uJ-TmJ">
+                                <rect key="frame" x="10" y="124" width="580" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+>>>>>>> master
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9k0-9R-EP4">
                                 <rect key="frame" x="10" y="322" width="580" height="45"/>
                                 <color key="backgroundColor" red="0.25712068172198754" green="0.45085487565445026" blue="0.34849402692897768" alpha="0.39009862588652483" colorSpace="calibratedRGB"/>
@@ -188,6 +196,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTs-oG-o2u">
+                                <rect key="frame" x="300" y="150" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="42"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -196,12 +210,14 @@
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="kyx-1H-FAE" secondAttribute="bottom" constant="8" id="9KC-Q6-mRu"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
                             <constraint firstAttribute="trailing" secondItem="kyx-1H-FAE" secondAttribute="trailing" constant="20" id="EhY-3Y-96j"/>
+                            <constraint firstItem="dTs-oG-o2u" firstAttribute="centerY" secondItem="KgU-1a-JYb" secondAttribute="centerY" constant="-150" id="Fvs-7v-OU1"/>
                             <constraint firstItem="kyx-1H-FAE" firstAttribute="top" secondItem="A8E-Nn-O1a" secondAttribute="bottom" constant="17" id="Ga9-Un-3eO"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" constant="15" id="KDg-1V-Fxa"/>
                             <constraint firstItem="A8E-Nn-O1a" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="8" id="Om3-X8-elu"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="kyx-1H-FAE" secondAttribute="bottom" constant="20" id="Pvo-sN-g8G"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" constant="20" id="ZfJ-0g-zjN"/>
                             <constraint firstItem="kyx-1H-FAE" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" constant="2" id="Zgt-Cl-FmH"/>
+                            <constraint firstItem="dTs-oG-o2u" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="eA7-Vm-A5G"/>
                             <constraint firstItem="A8E-Nn-O1a" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="28" id="iRa-f3-DGF"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="mnn-Wh-YSu"/>
                             <constraint firstAttribute="trailing" secondItem="A8E-Nn-O1a" secondAttribute="trailing" constant="8" id="q7n-rW-ssm"/>
@@ -225,6 +241,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
+                        <outlet property="nextMeditation" destination="dTs-oG-o2u" id="koA-B2-NoD"/>
                         <outlet property="textView" destination="kyx-1H-FAE" id="pGM-jq-dgd"/>
                     </connections>
                 </viewController>
@@ -244,22 +261,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2t8-H7-guC">
-                                <rect key="frame" x="36" y="430" width="528" height="64"/>
-                                <date key="date" timeIntervalSinceReferenceDate="471806017.62771302">
-                                    <!--2015-12-14 17:13:37 +0000-->
-                                </date>
-                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of Time Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io8-NR-BL9">
+                                <rect key="frame" x="203" y="289" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="Bgr-vd-Twn"/>
-                            <constraint firstAttribute="trailing" secondItem="2t8-H7-guC" secondAttribute="trailing" constant="36" id="DrV-u8-ccr"/>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="366" id="JTe-93-0hB"/>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="36" id="q2o-SP-sH6"/>
-                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="2t8-H7-guC" secondAttribute="bottom" constant="106" id="z8F-Pd-vTM"/>
+                            <constraint firstItem="Io8-NR-BL9" firstAttribute="centerY" secondItem="Ghr-oC-B9k" secondAttribute="centerY" id="vUg-rA-LEg"/>
+                            <constraint firstItem="Io8-NR-BL9" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="xOE-N6-8nM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeSelected" destination="Io8-NR-BL9" id="tlx-tO-Vxz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-OI-QJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,6 +304,9 @@
                                 <rect key="frame" x="276" y="564" width="48" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneWasPressed:" destination="SMz-HM-tvb" eventType="touchUpInside" id="FnT-uc-ju2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
