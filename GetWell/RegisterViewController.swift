@@ -10,6 +10,7 @@ import UIKit
 
 class RegisterViewController: UIViewController
 {
+    var mom = 5
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
