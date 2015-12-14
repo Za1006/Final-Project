@@ -11,7 +11,6 @@ import UIKit
 class RegisterViewController: UIViewController
 {
     
-    let mike = "me"
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
