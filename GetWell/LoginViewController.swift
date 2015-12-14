@@ -15,7 +15,7 @@ class LoginViewController: UIViewController
     var mike: String?
     var keron: String?
     var stupid: String?
-    var git: String?
+    var mom = 1
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
