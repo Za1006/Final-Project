@@ -172,22 +172,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2t8-H7-guC">
-                                <rect key="frame" x="36" y="386" width="528" height="108"/>
-                                <date key="date" timeIntervalSinceReferenceDate="471806017.62771302">
-                                    <!--2015-12-14 17:13:37 +0000-->
-                                </date>
-                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of Time Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io8-NR-BL9">
+                                <rect key="frame" x="203" y="289" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="Bgr-vd-Twn"/>
-                            <constraint firstAttribute="trailing" secondItem="2t8-H7-guC" secondAttribute="trailing" constant="36" id="DrV-u8-ccr"/>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="366" id="JTe-93-0hB"/>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="36" id="q2o-SP-sH6"/>
-                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="2t8-H7-guC" secondAttribute="bottom" constant="106" id="z8F-Pd-vTM"/>
+                            <constraint firstItem="Io8-NR-BL9" firstAttribute="centerY" secondItem="Ghr-oC-B9k" secondAttribute="centerY" id="vUg-rA-LEg"/>
+                            <constraint firstItem="Io8-NR-BL9" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="xOE-N6-8nM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeSelected" destination="Io8-NR-BL9" id="tlx-tO-Vxz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-OI-QJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

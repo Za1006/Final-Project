@@ -10,14 +10,19 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
+@objc protocol TimerPickerDelegate
+    //    for homework TimeCircuitsDatePickerDelegate
+{
+    func timerWasChosen(timerCount: Int)
+}
+
+class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, TimerPickerDelegate
 {
    
-    
+    @IBOutlet var timeSelected: UILabel!
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
-    @IBOutlet var picker: UIPickerView!
     @IBOutlet var playPauseButton: UIButton!
     
     let avQueuePlayer = AVQueuePlayer()
@@ -70,17 +75,12 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
     {
         return "\(120-row)"
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
+    func timerWasChosen(timerCount: Int)
+    {
+        
+    }
+
     @IBAction func playPauseTapped(sender: UIButton)
     {
         togglePlayback(!nowPlaying)

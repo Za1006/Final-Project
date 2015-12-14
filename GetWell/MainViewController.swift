@@ -16,7 +16,7 @@ import UIKit
 class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate
 {
     
-    
+    var timerDelegate: TimerPickerDelegate?
     var delegate: MediaPlayerViewController?
 
     @IBOutlet weak var image: UIImage!
@@ -76,12 +76,9 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         return String(formattedTime)
     }
 
-    
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
         
     }
-    
-
     
 }
