@@ -12,6 +12,7 @@ class LoginViewController: UIViewController
 {
     
     var liz: String?
+    var mike: String?
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
