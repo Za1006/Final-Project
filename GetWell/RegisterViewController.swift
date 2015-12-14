@@ -10,12 +10,7 @@ import UIKit
 
 class RegisterViewController: UIViewController
 {
-<<<<<<< HEAD
-        
-=======
-    
-    
->>>>>>> Elizabeth-Branch
+
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
