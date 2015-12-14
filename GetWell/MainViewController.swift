@@ -12,12 +12,19 @@ import UIKit
 {
     func dateWasChosen(date: NSDate)
 }
-
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate
+@objc protocol MediaPlayerViewDelegate
+{
+    func timerWasChosen(timerCount: Int)
+    
+}
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate,MediaPlayerViewDelegate
 {
     
     
     var delegate: MediaPlayerViewController?
+    var originalCount = 120
+    var timer: NSTimer?
+
 
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
@@ -40,9 +47,14 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+        if segue.identifier == "ShowCountdownSegue"
+        {
+            let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
+            mediaPlayerVC.delegate = self
+        }
+
         if segue.identifier == "SetReminderSegue"
         {
             let destVC = segue.destinationViewController as! SetReminderPopOverViewController
@@ -60,12 +72,20 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         //can also just type return .None
     }
     
+//    Timer chosen from Segmented (5, 10, 15, 20)
+    func timerWasChosen(timerCount: Int)
+    {
+        originalCount = timerCount
+    }
+    
     // MARK: DatePicker Delegate
     
     func dateWasChosen(date: NSDate)
     {
 //        destinationTime.text = dateFormat(date)
     }
+    
+
     
     func dateFormat(x: NSDate) -> String
     {
