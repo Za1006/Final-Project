@@ -20,10 +20,6 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
     
-    
-    var sam = 10
-    
-    
     var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
 
     override func viewDidLoad()
