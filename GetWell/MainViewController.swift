@@ -16,6 +16,9 @@ import UIKit
 class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate
 {
     
+    
+    var delegate: MediaPlayerViewController?
+
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
@@ -73,20 +76,12 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         return String(formattedTime)
     }
 
-    func setNotificationTapped()
-    {
-        
-    }
     
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
         
     }
     
-    @IBAction func setNotificationTapped(sender: UIBarButtonItem)
-    {
-        
-    }
-// popover view to time picker
+
     
 }
