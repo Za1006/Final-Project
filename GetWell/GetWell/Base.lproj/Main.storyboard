@@ -171,7 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OpT-yV-mnz">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OpT-yV-mnz">
                                 <rect key="frame" x="69" y="383" width="463" height="44"/>
                                 <date key="date" timeIntervalSinceReferenceDate="471722101.24223298">
                                     <!--2015-12-13 17:55:01 +0000-->
@@ -180,7 +180,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OpT-yV-mnz" firstAttribute="top" secondItem="4OF-DW-bcu" secondAttribute="bottom" constant="363" id="H69-6D-dgM"/>
+                            <constraint firstItem="OpT-yV-mnz" firstAttribute="top" secondItem="4OF-DW-bcu" secondAttribute="bottom" constant="319" id="H69-6D-dgM"/>
                             <constraint firstItem="det-ah-w5w" firstAttribute="top" secondItem="OpT-yV-mnz" secondAttribute="bottom" constant="173" id="UYE-nx-j5z"/>
                             <constraint firstItem="OpT-yV-mnz" firstAttribute="leading" secondItem="uLj-r7-SwJ" secondAttribute="leading" constant="69" id="ZOy-PX-jV3"/>
                             <constraint firstItem="OpT-yV-mnz" firstAttribute="centerX" secondItem="uLj-r7-SwJ" secondAttribute="centerX" id="ZXS-Aw-Rub"/>
