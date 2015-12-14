@@ -105,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
+				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
@@ -115,7 +116,6 @@
 				AAC076201C19E5B800FFCD71 /* ImageSets */,
 				AAC0760F1C18C94300FFCD71 /* Info.plist */,
 				AAC0761E1C19DCA100FFCD71 /* Simple_Meditation_Step.docx */,
-				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AAC076071C18C94300FFCD71 /* GetWell.xcdatamodeld */,
 				4C0700891C1A39EB0092688C /* hypnosis.jpg */,
 			);
