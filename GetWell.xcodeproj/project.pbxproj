@@ -10,6 +10,8 @@
 		39FAFD2AF6D7F9A0E7731F83 /* libPods-GetWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75C5F9F12D7377264A999C /* libPods-GetWell.a */; };
 		4C0700881C1A39630092688C /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */; };
 		4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0700891C1A39EB0092688C /* hypnosis.jpg */; };
+		AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */; };
+		AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4271C1F28FF00CA21F6 /* Songs.swift */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
 		AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC076041C18C94300FFCD71 /* Main.storyboard */; };
 		AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAC076071C18C94300FFCD71 /* GetWell.xcdatamodeld */; };
@@ -37,6 +39,8 @@
 		4C0700891C1A39EB0092688C /* hypnosis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hypnosis.jpg; sourceTree = "<group>"; };
 		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
+		AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		AA36F4271C1F28FF00CA21F6 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		AAC075FD1C18C94300FFCD71 /* GetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC076001C18C94300FFCD71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC076051C18C94300FFCD71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,18 +108,20 @@
 		AAC075FF1C18C94300FFCD71 /* GetWell */ = {
 			isa = PBXGroup;
 			children = (
-				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
-				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
-				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
+				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
+				AA36F4271C1F28FF00CA21F6 /* Songs.swift */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
+				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
+				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
+				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
-				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
 				AAC076211C19E5F700FFCD71 /* MusicFile */,
 				AAC076201C19E5B800FFCD71 /* ImageSets */,
 				AAC0760F1C18C94300FFCD71 /* Info.plist */,
 				AAC0761E1C19DCA100FFCD71 /* Simple_Meditation_Step.docx */,
-				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AAC076071C18C94300FFCD71 /* GetWell.xcdatamodeld */,
 				4C0700891C1A39EB0092688C /* hypnosis.jpg */,
 			);
@@ -299,6 +305,8 @@
 				AAC0761B1C19104D00FFCD71 /* RegisterViewController.swift in Sources */,
 				AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */,
 				AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */,
+				AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */,
+				AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */,
 				AAC0761D1C19D21600FFCD71 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
