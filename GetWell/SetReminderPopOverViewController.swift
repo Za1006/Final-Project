@@ -35,4 +35,20 @@ class SetReminderPopOverViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func doneWasPressed(sender: UIButton!)
+    {
+        delegate?.dateWasChosen(datePicker.date)
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = datePicker.date
+        print(NSDate())
+        print(localNotification.fireDate)
+        localNotification.timeZone = NSTimeZone.localTimeZone()
+        localNotification.alertBody = "Time to Relax"
+        localNotification.alertAction = "Open App"
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

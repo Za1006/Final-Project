@@ -17,7 +17,7 @@ import UIKit
     func timerWasChosen(timerCount: Int)
     
 }
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate,MediaPlayerViewDelegate
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate, MediaPlayerViewDelegate
 {
     
     var timerDelegate: TimerPickerDelegate?
@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     var originalCount = 120
     var timer: NSTimer?
 
-
+    @IBOutlet weak var nextMeditation: UILabel!
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
@@ -82,19 +82,18 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     func dateWasChosen(date: NSDate)
     {
+        nextMeditation.text = "date"
 //        destinationTime.text = dateFormat(date)
     }
     
-
-    
-    func dateFormat(x: NSDate) -> String
-    {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy", options: 0, locale: NSLocale.currentLocale())
-        let formattedTime = formatter.stringFromDate(x).uppercaseString
-        
-        return String(formattedTime)
-    }
+//    func dateFormat(x: NSDate) -> String
+//    {
+//        let formatter = NSDateFormatter()
+//        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy", options: 0, locale: NSLocale.currentLocale())
+//        let formattedTime = formatter.stringFromDate(x).uppercaseString
+//        
+//        return String(formattedTime)
+//    }
 
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
