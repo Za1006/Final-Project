@@ -65,12 +65,12 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
-        return 20
+        return 120
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
-        return "\(20-row)"
+        return "\(120-row)"
     }// MARK: - Navigation
 
 //   Don't need the segue just need the function
@@ -162,8 +162,8 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
         {
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
-            songTitleLabel.text? = song.title
-            artistLabel.text? = song.artist
+//            songTitleLabel.text = song.title
+//            artistLabel.text = song.artist
 //          countDownView.image = UIPickerView(time: song.countDownView)
         }
     }
