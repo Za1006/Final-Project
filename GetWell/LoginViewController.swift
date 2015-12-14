@@ -14,11 +14,10 @@ class LoginViewController: UIViewController
     var liz: String?
     var mike: String?
     var keron: String?
-<<<<<<< HEAD
     var stupidXcode: String?
-=======
     var stupid: String?
->>>>>>> master
+    var pickles: String?
+
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
