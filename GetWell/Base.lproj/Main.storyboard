@@ -106,6 +106,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="changeSortCriteria:" destination="mtC-ec-np1" eventType="touchUpInside" id="xyf-qG-OC6"/>
+                                    <segue destination="4t6-Ik-EYg" kind="show" identifier="ShowCountdownSegue" id="SMi-Mv-0hv"/>
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kyx-1H-FAE">
@@ -158,6 +159,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928" y="1021"/>
+        </scene>
+        <!--Media Player View Controller-->
+        <scene sceneID="CET-9q-MK8">
+            <objects>
+                <viewController id="4t6-Ik-EYg" customClass="MediaPlayerViewController" customModule="GetWell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dqn-Fj-VxH"/>
+                        <viewControllerLayoutGuide type="bottom" id="TMn-vz-Q0u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ghr-oC-B9k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2t8-H7-guC">
+                                <rect key="frame" x="36" y="386" width="528" height="108"/>
+                                <date key="date" timeIntervalSinceReferenceDate="471806017.62771302">
+                                    <!--2015-12-14 17:13:37 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2t8-H7-guC" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="Bgr-vd-Twn"/>
+                            <constraint firstAttribute="trailing" secondItem="2t8-H7-guC" secondAttribute="trailing" constant="36" id="DrV-u8-ccr"/>
+                            <constraint firstItem="2t8-H7-guC" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="366" id="JTe-93-0hB"/>
+                            <constraint firstItem="2t8-H7-guC" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="36" id="q2o-SP-sH6"/>
+                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="2t8-H7-guC" secondAttribute="bottom" constant="106" id="z8F-Pd-vTM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-OI-QJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="1698"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="yBa-3x-hA0">
