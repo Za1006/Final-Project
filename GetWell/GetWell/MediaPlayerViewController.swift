@@ -16,7 +16,7 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
-    @IBOutlet var countDownPickerView: UIDatePicker!
+    @IBOutlet var picker: UIPickerView!
     @IBOutlet var playPauseButton: UIButton!
     
     
@@ -46,11 +46,11 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
 
     }
     
-//    override func viewWillDisappear(animated: Bool)
-//    {
-//        super.viewWillDisappear(animated)
-//        delegate?.timerWasChosen(60-picker.selectedRowInComponent(0))
-//    }
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        delegate?.timerWasChosen(60-picker.selectedRowInComponent(0))
+    }
 
     override func didReceiveMemoryWarning()
     {
@@ -60,7 +60,7 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
 //    picker View for CountDownPicker in the MediaPlayer
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
     {
-        return 1
+       return 1
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
@@ -71,7 +71,11 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
         return "\(120-row)"
-    }// MARK: - Navigation
+    }
+    
+    
+    
+// MARK: - Navigation
 
 //   Don't need the segue just need the function
     
