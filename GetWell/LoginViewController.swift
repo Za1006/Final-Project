@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController
 {
     
+    var liz: String?
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
