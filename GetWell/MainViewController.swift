@@ -29,8 +29,6 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
-    
-    var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
 
     override func viewDidLoad()
     {
@@ -59,8 +57,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         {
             let destVC = segue.destinationViewController as! SetReminderPopOverViewController
                 destVC.popoverPresentationController?.delegate = self
-            let contentHeight = 50.0 * CGFloat(remainingCharacters.count)
-                destVC.preferredContentSize = CGSizeMake(400.0, contentHeight)
+                destVC.delegate = self
+                destVC.preferredContentSize = CGSizeMake(400.0, 216.0)
         }
     }
     
@@ -82,18 +80,28 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     func dateWasChosen(date: NSDate)
     {
-        nextMeditation.text = "date"
-//        destinationTime.text = dateFormat(date)
+        nextMeditation.text = dateFormat(date)
+        
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = date
+                print(NSDate())
+                print(localNotification.fireDate)
+        localNotification.timeZone = NSTimeZone.localTimeZone()
+        localNotification.alertBody = "Time to Relax"
+        localNotification.alertAction = "Open App"
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     
-//    func dateFormat(x: NSDate) -> String
-//    {
-//        let formatter = NSDateFormatter()
-//        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy", options: 0, locale: NSLocale.currentLocale())
-//        let formattedTime = formatter.stringFromDate(x).uppercaseString
-//        
-//        return String(formattedTime)
-//    }
+    func dateFormat(x: NSDate) -> String
+    {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy HH:mm", options: 0, locale: NSLocale.currentLocale())
+        let formattedTime = formatter.stringFromDate(x).uppercaseString
+        
+        return String(formattedTime)
+    }
 
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {

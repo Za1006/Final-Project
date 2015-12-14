@@ -116,8 +116,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Reminder Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTs-oG-o2u">
-                                <rect key="frame" x="110" y="271" width="380" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTs-oG-o2u">
+                                <rect key="frame" x="300" y="150" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="42"/>
                                 <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="kyx-1H-FAE" secondAttribute="bottom" constant="8" id="9KC-Q6-mRu"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
                             <constraint firstAttribute="trailing" secondItem="kyx-1H-FAE" secondAttribute="trailing" constant="20" id="EhY-3Y-96j"/>
-                            <constraint firstItem="dTs-oG-o2u" firstAttribute="centerY" secondItem="KgU-1a-JYb" secondAttribute="centerY" id="Fvs-7v-OU1"/>
+                            <constraint firstItem="dTs-oG-o2u" firstAttribute="centerY" secondItem="KgU-1a-JYb" secondAttribute="centerY" constant="-150" id="Fvs-7v-OU1"/>
                             <constraint firstItem="kyx-1H-FAE" firstAttribute="top" secondItem="A8E-Nn-O1a" secondAttribute="bottom" constant="17" id="Ga9-Un-3eO"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" constant="15" id="KDg-1V-Fxa"/>
                             <constraint firstItem="A8E-Nn-O1a" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="8" id="Om3-X8-elu"/>
