@@ -26,10 +26,10 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDelegate, UIPicke
     var nowPlaying: Bool = false
     
     var timer: NSTimer?
-    var fiveMinutesCount = 5
-    var tenMinutesCount = 10
-    var fifteenMinutesCount = 15
-    var twentyMinutesCount = 20
+//    var fiveMinutesCount = 5
+//    var tenMinutesCount = 10
+//    var fifteenMinutesCount = 15
+//    var twentyMinutesCount = 20
     
     var delegate: MediaPlayerViewDelegate?
 
