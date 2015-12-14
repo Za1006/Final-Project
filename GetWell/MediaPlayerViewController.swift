@@ -10,16 +10,10 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-@objc protocol TimerPickerDelegate
-    //    for homework TimeCircuitsDatePickerDelegate
-{
-    func timerWasChosen(timerCount: Int)
-}
-
-class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, TimerPickerDelegate
+class MediaPlayerViewController: UIViewController
 {
    
-    @IBOutlet var timeSelected: UILabel!
+    
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
@@ -47,40 +41,24 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
         loadCurrentSong()
 
     }
-//    
-//    override func viewWillDisappear(animated: Bool)
-//    {
-//        super.viewWillDisappear(animated)
-//        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
-//    }
+
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
-    //    picker View for CountDownPicker in the MediaPlayer
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
-    {
-        return 1
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
-    {
-        return 120
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
-    {
-        return "\(120-row)"
-    }
-    
-    func timerWasChosen(timerCount: Int)
-    {
-        
-    }
+    /*
+    // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
     @IBAction func playPauseTapped(sender: UIButton)
     {
         togglePlayback(!nowPlaying)
@@ -157,7 +135,6 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
                         songTitleLabel.text = song.title
                         artistLabel.text = song.artist
-//                      countDownView.image = UIPickerView(time: song.countDownView)
         }
     }
     
