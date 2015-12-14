@@ -12,6 +12,7 @@ class LoginViewController: UIViewController
 {
     var peoples = 3
     var samsBeacons = 10
+    var red: String?
 
     
     @IBOutlet weak var usernameTextField: UITextField!
