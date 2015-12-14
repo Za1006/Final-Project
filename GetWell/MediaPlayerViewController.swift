@@ -155,9 +155,9 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
         {
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
-            //            songTitleLabel.text = song.title
-            //            artistLabel.text = song.artist
-            //          countDownView.image = UIPickerView(time: song.countDownView)
+                        songTitleLabel.text = song.title
+                        artistLabel.text = song.artist
+//                      countDownView.image = UIPickerView(time: song.countDownView)
         }
     }
     
