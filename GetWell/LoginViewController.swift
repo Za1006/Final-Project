@@ -11,11 +11,9 @@ import UIKit
 class LoginViewController: UIViewController
 {
     
-    var liz: String?
-    var mike: String?
-    var keron: String?
-    var stupid: String?
-    var mom = 1
+    var peoples = 3
+
+
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
