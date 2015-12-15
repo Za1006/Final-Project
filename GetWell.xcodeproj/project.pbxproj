@@ -32,6 +32,7 @@
 		AAC076351C19E5F700FFCD71 /* bensound-sadday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AAC0762A1C19E5F700FFCD71 /* bensound-sadday.mp3 */; };
 		AAC076361C19E5F700FFCD71 /* bensound-slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AAC0762B1C19E5F700FFCD71 /* bensound-slowmotion.mp3 */; };
 		AAC076371C19E5F700FFCD71 /* bensound-tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AAC0762C1C19E5F700FFCD71 /* bensound-tomorrow.mp3 */; };
+		AAF556571C2077A6009BC1B7 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF556561C2077A6009BC1B7 /* Timers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		AAC0762A1C19E5F700FFCD71 /* bensound-sadday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-sadday.mp3"; sourceTree = "<group>"; };
 		AAC0762B1C19E5F700FFCD71 /* bensound-slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-slowmotion.mp3"; sourceTree = "<group>"; };
 		AAC0762C1C19E5F700FFCD71 /* bensound-tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-tomorrow.mp3"; sourceTree = "<group>"; };
+		AAF556561C2077A6009BC1B7 /* Timers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
 		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +84,6 @@
 		4C5D1A161C1F40E0003C5294 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
-				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -131,12 +131,15 @@
 				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
 				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AA36F4271C1F28FF00CA21F6 /* Songs.swift */,
-				4C5D1A161C1F40E0003C5294 /* Parse */,
+				AAF556561C2077A6009BC1B7 /* Timers.swift */,
+				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
+				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
 				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
-				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
+				4C5D1A161C1F40E0003C5294 /* Parse */,
 				AAC076211C19E5F700FFCD71 /* MusicFile */,
 				AAC076201C19E5B800FFCD71 /* ImageSets */,
 				4C5D1A171C1F40FA003C5294 /* Extra */,
@@ -323,6 +326,7 @@
 				AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */,
 				AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */,
 				AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */,
+				AAF556571C2077A6009BC1B7 /* Timers.swift in Sources */,
 				AAC0761D1C19D21600FFCD71 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

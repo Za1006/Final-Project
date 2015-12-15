@@ -16,11 +16,10 @@ import AVFoundation
     func timerWasChosen(timerCount: Int)
 }
 
-class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, TimerPickerDelegate
+class MediaPlayerViewController: UIViewController, TimerPickerDelegate
 {
    
     @IBOutlet var timeSelected: UILabel!
-    @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
@@ -31,6 +30,9 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
     var nowPlaying: Bool = false
     
     var timer: NSTimer?
+    var timers = Array<Timer>()
+    var currentTimerSet: Timer?
+
     var delegate: MediaPlayerViewDelegate?
     
   
@@ -43,35 +45,21 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
         loadCurrentSong()
 
     }
-//    
-//    override func viewWillDisappear(animated: Bool)
-//    {
-//        super.viewWillDisappear(animated)
+  
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
 //        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
-//    }
+    }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
-    //    picker View for CountDownPicker in the MediaPlayer
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
-    {
-        return 1
-    }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
-    {
-        return 120
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
-    {
-        return "\(120-row)"
-    }
-    
+
     func timerWasChosen(timerCount: Int)
     {
         
