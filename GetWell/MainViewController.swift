@@ -24,6 +24,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     var delegate: MediaPlayerViewController?
     var originalCount = 120
     var timer: NSTimer?
+    
 
     @IBOutlet weak var nextMeditation: UILabel!
     @IBOutlet weak var image: UIImage!
@@ -105,6 +106,26 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
+        if sender.selectedSegmentIndex == 0
+        {
+            
+        }
+        else if sender.selectedSegmentIndex == 1
+        {
+            
+        }
+        else if sender.selectedSegmentIndex == 2
+        {
+            
+        }
+        else if sender.selectedSegmentIndex == 3
+        {
+            
+        }
+        else
+        {
+            
+        }
         
     }
     
