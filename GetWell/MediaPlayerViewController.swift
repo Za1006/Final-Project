@@ -33,11 +33,7 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
     var timer: NSTimer?
     var delegate: MediaPlayerViewDelegate?
     
-    //    var fiveMinutesCount = 5
-    //    var tenMinutesCount = 10
-    //    var fifteenMinutesCount = 15
-    //    var twentyMinutesCount = 20
-
+  
     
     override func viewDidLoad()
     {
