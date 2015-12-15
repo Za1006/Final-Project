@@ -11,6 +11,12 @@
 		4C0700881C1A39630092688C /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */; };
 		4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0700891C1A39EB0092688C /* hypnosis.jpg */; };
 		5D58788A1C1F6E1800B36E92 /* GetWellLogin2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878891C1F6E1800B36E92 /* GetWellLogin2a.png */; };
+		5D58788C1C1F7EF100B36E92 /* GetWellSignUp2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D58788B1C1F7EF100B36E92 /* GetWellSignUp2.png */; };
+		5D58788E1C1F82B100B36E92 /* GetWellSignUp2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D58788D1C1F82B100B36E92 /* GetWellSignUp2a.png */; };
+		5D5878901C1F844400B36E92 /* GetWellSignUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D58788F1C1F844400B36E92 /* GetWellSignUp3.png */; };
+		5D5878921C1F8BB500B36E92 /* GetWellSignUp22a.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */; };
+		5D5878941C1F8C8E00B36E92 /* GetWellSignUpFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */; };
+		5D5878961C1F924A00B36E92 /* GetWellMainPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878951C1F924A00B36E92 /* GetWellMainPage.png */; };
 		AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */; };
 		AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4271C1F28FF00CA21F6 /* Songs.swift */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
@@ -39,6 +45,12 @@
 		4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		4C0700891C1A39EB0092688C /* hypnosis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hypnosis.jpg; sourceTree = "<group>"; };
 		5D5878891C1F6E1800B36E92 /* GetWellLogin2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellLogin2a.png; sourceTree = "<group>"; };
+		5D58788B1C1F7EF100B36E92 /* GetWellSignUp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp2.png; sourceTree = "<group>"; };
+		5D58788D1C1F82B100B36E92 /* GetWellSignUp2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp2a.png; sourceTree = "<group>"; };
+		5D58788F1C1F844400B36E92 /* GetWellSignUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp3.png; sourceTree = "<group>"; };
+		5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp22a.png; sourceTree = "<group>"; };
+		5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUpFinal.png; sourceTree = "<group>"; };
+		5D5878951C1F924A00B36E92 /* GetWellMainPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellMainPage.png; sourceTree = "<group>"; };
 		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
 		AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +130,12 @@
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
 				5D5878891C1F6E1800B36E92 /* GetWellLogin2a.png */,
+				5D58788B1C1F7EF100B36E92 /* GetWellSignUp2.png */,
+				5D58788D1C1F82B100B36E92 /* GetWellSignUp2a.png */,
+				5D58788F1C1F844400B36E92 /* GetWellSignUp3.png */,
+				5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */,
+				5D5878951C1F924A00B36E92 /* GetWellMainPage.png */,
+				5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */,
 				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
@@ -234,10 +252,14 @@
 				5D58788A1C1F6E1800B36E92 /* GetWellLogin2a.png in Resources */,
 				AAC076371C19E5F700FFCD71 /* bensound-tomorrow.mp3 in Resources */,
 				AAC076351C19E5F700FFCD71 /* bensound-sadday.mp3 in Resources */,
+				5D5878961C1F924A00B36E92 /* GetWellMainPage.png in Resources */,
+				5D5878941C1F8C8E00B36E92 /* GetWellSignUpFinal.png in Resources */,
+				5D58788C1C1F7EF100B36E92 /* GetWellSignUp2.png in Resources */,
 				AAC0760E1C18C94300FFCD71 /* LaunchScreen.storyboard in Resources */,
 				AAC0762E1C19E5F700FFCD71 /* bensound-betterdays.mp3 in Resources */,
 				AAC076331C19E5F700FFCD71 /* bensound-november.mp3 in Resources */,
 				AAC0761F1C19DCA100FFCD71 /* Simple_Meditation_Step.docx in Resources */,
+				5D5878901C1F844400B36E92 /* GetWellSignUp3.png in Resources */,
 				4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */,
 				AAC0760B1C18C94300FFCD71 /* Assets.xcassets in Resources */,
 				AAC076311C19E5F700FFCD71 /* bensound-india.mp3 in Resources */,
@@ -245,7 +267,9 @@
 				AAC076341C19E5F700FFCD71 /* bensound-relaxing.mp3 in Resources */,
 				AAC076321C19E5F700FFCD71 /* bensound-newdawn.mp3 in Resources */,
 				AAC0762D1C19E5F700FFCD71 /* bensound-acousticbreeze.mp3 in Resources */,
+				5D58788E1C1F82B100B36E92 /* GetWellSignUp2a.png in Resources */,
 				AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */,
+				5D5878921C1F8BB500B36E92 /* GetWellSignUp22a.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
