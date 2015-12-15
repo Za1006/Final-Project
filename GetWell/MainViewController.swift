@@ -20,8 +20,10 @@ import UIKit
 class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate, MediaPlayerViewDelegate
 {
     
+
     var timerDelegate: TimerPickerDelegate?
     var delegate: MediaPlayerViewController?
+
     var originalCount = 120
     var timer: NSTimer?
     

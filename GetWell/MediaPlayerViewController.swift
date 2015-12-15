@@ -16,11 +16,10 @@ import AVFoundation
     func timerWasChosen(timerCount: Int)
 }
 
-class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, TimerPickerDelegate
+class MediaPlayerViewController: UIViewController, TimerPickerDelegate
 {
    
     @IBOutlet var timeSelected: UILabel!
-    @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
@@ -57,21 +56,7 @@ class MediaPlayerViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     //    picker View for CountDownPicker in the MediaPlayer
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
-    {
-        return 1
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
-    {
-        return 120
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
-    {
-        return "\(120-row)"
-    }
-    
+
     func timerWasChosen(timerCount: Int)
     {
         
