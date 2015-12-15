@@ -17,6 +17,7 @@
 		5D5878921C1F8BB500B36E92 /* GetWellSignUp22a.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */; };
 		5D5878941C1F8C8E00B36E92 /* GetWellSignUpFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */; };
 		5D5878961C1F924A00B36E92 /* GetWellMainPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878951C1F924A00B36E92 /* GetWellMainPage.png */; };
+		5D5878981C1F9A2000B36E92 /* gwArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878971C1F9A2000B36E92 /* gwArrow.png */; };
 		AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */; };
 		AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4271C1F28FF00CA21F6 /* Songs.swift */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp22a.png; sourceTree = "<group>"; };
 		5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUpFinal.png; sourceTree = "<group>"; };
 		5D5878951C1F924A00B36E92 /* GetWellMainPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellMainPage.png; sourceTree = "<group>"; };
+		5D5878971C1F9A2000B36E92 /* gwArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gwArrow.png; sourceTree = "<group>"; };
 		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
 		AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */,
 				5D5878951C1F924A00B36E92 /* GetWellMainPage.png */,
 				5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */,
+				5D5878971C1F9A2000B36E92 /* gwArrow.png */,
 				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				5D5878901C1F844400B36E92 /* GetWellSignUp3.png in Resources */,
 				4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */,
 				AAC0760B1C18C94300FFCD71 /* Assets.xcassets in Resources */,
+				5D5878981C1F9A2000B36E92 /* gwArrow.png in Resources */,
 				AAC076311C19E5F700FFCD71 /* bensound-india.mp3 in Resources */,
 				AAC076361C19E5F700FFCD71 /* bensound-slowmotion.mp3 in Resources */,
 				AAC076341C19E5F700FFCD71 /* bensound-relaxing.mp3 in Resources */,
