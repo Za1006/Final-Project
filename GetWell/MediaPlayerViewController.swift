@@ -10,13 +10,9 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-@objc protocol TimerPickerDelegate
-    //    for homework TimeCircuitsDatePickerDelegate
-{
-    func timerWasChosen(timerCount: Int)
-}
 
-class MediaPlayerViewController: UIViewController, TimerPickerDelegate
+
+class MediaPlayerViewController: UIViewController
 {
    
     @IBOutlet var timeSelected: UILabel!
@@ -58,12 +54,6 @@ class MediaPlayerViewController: UIViewController, TimerPickerDelegate
     }
     
     
-    
-
-    func timerWasChosen(timerCount: Int)
-    {
-        
-    }
 
     @IBAction func playPauseTapped(sender: UIButton)
     {
