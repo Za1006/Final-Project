@@ -10,11 +10,19 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
+<<<<<<< HEAD
 
 class MediaPlayerViewController: UIViewController
 {
    
     @IBOutlet var timeSelected: UILabel!
+=======
+class MediaPlayerViewController: UIViewController
+{
+   
+    
+    @IBOutlet var timeLabel: UILabel!
+>>>>>>> keronGetWell
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
@@ -40,12 +48,16 @@ class MediaPlayerViewController: UIViewController
         loadCurrentSong()
 
     }
+<<<<<<< HEAD
   
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
 //        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
     }
+=======
+
+>>>>>>> keronGetWell
 
     override func didReceiveMemoryWarning()
     {
@@ -57,7 +69,20 @@ class MediaPlayerViewController: UIViewController
 //            originalCount = timerCount
         }
     
+<<<<<<< HEAD
 
+=======
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+>>>>>>> keronGetWell
     @IBAction func playPauseTapped(sender: UIButton)
     {
         togglePlayback(!nowPlaying)
@@ -134,7 +159,6 @@ class MediaPlayerViewController: UIViewController
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
                         songTitleLabel.text = song.title
                         artistLabel.text = song.artist
-//                      countDownView.image = UIPickerView(time: song.countDownView)
         }
     }
     
