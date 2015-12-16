@@ -10,19 +10,13 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-<<<<<<< HEAD
+
 
 class MediaPlayerViewController: UIViewController
 {
    
     @IBOutlet var timeSelected: UILabel!
-=======
-class MediaPlayerViewController: UIViewController
-{
-   
-    
     @IBOutlet var timeLabel: UILabel!
->>>>>>> keronGetWell
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
@@ -37,7 +31,6 @@ class MediaPlayerViewController: UIViewController
 
 
     var delegate: MediaPlayerViewDelegate?
-    
   
     
     override func viewDidLoad()
@@ -48,30 +41,25 @@ class MediaPlayerViewController: UIViewController
         loadCurrentSong()
 
     }
-<<<<<<< HEAD
   
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
 //        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
     }
-=======
 
->>>>>>> keronGetWell
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
-        func timerWasChosen(timerCount: Int)
-        {
-//            originalCount = timerCount
-        }
-    
-<<<<<<< HEAD
+//        func timerWasChosen(timerCount: Int)
+//        {
+////            originalCount = timerCount
+//        }
+//    
 
-=======
     /*
     // MARK: - Navigation
 
@@ -82,7 +70,7 @@ class MediaPlayerViewController: UIViewController
     }
     */
     
->>>>>>> keronGetWell
+    
     @IBAction func playPauseTapped(sender: UIButton)
     {
         togglePlayback(!nowPlaying)
