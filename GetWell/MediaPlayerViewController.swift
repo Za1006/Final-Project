@@ -30,7 +30,7 @@ class MediaPlayerViewController: UIViewController
 
 
 
-    var delegate: MediaPlayerViewDelegate?
+    var delegate: MainViewController?
   
     
     override func viewDidLoad()

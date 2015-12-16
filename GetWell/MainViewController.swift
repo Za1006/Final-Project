@@ -14,27 +14,19 @@ import CoreData
     func dateWasChosen(date: NSDate)
 }
 
-@objc protocol MediaPlayerViewDelegate
-{
-    func timerWasChosen(timerCount: Int)
-}
 
 
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate, MediaPlayerViewDelegate, UITableViewDataSource, UITableViewDelegate
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, UITableViewDataSource, UITableViewDelegate, DatePickerDelegate
 {
     
     
-    var delegate: MediaPlayerViewController?
-    var originalCount = 120
-    var timer: NSTimer?
     
     
     @IBOutlet weak var nextMeditation: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var image: UIImage!
-    //@IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
     
-    var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
+    var remainingCharacters = []
     
     var stepsArray = Array<Steps>()
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
@@ -46,22 +38,23 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        title = "To do"
         
         let fetchRequest = NSFetchRequest(entityName: "Steps")
-        do {
+        do
+        {
             let fetchResults = try managedObjectContext.executeFetchRequest(fetchRequest) as? [Steps]
             stepsArray = fetchResults!
         }
-        catch {
+        catch
+        {
             let nserror = error as NSError
             NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
             abort()
+        }
 
     }
 
-    func didReceiveMemoryWarning()
+    override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,7 +62,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     // MARK: - Navigation
     
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "ShowCountdownSegue"
         {
@@ -94,11 +87,6 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         //can also just type return .None
     }
     
-//    Timer chosen from Segmented (5, 10, 15, 20)
-    func timerWasChosen(timerCount: Int)
-    {
-        originalCount = timerCount
-    }
     
     // MARK: DatePicker Delegate
     
@@ -117,10 +105,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
-
-
-   
-    
+        
     func dateFormat(x: NSDate) -> String
     {
         let formatter = NSDateFormatter()
@@ -142,7 +127,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             return stepsArray.count
         }
         
-        override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("StepsListCell", forIndexPath: indexPath) as! StepListCell
             
@@ -172,18 +157,18 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             }
             
             return cell
-        }
+    }
 
-        
-        // Override to support conditional editing of the table view.
-        override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    
+         //Override to support conditional editing of the table view.
+        func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
         {
             // Return false if you do not want the specified item to be editable.
             return false
         }
 
         // Override to support editing the table view.
-        override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+        func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
         {
             let todoItem = stepsArray[indexPath.row]
             
@@ -209,36 +194,6 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 
 
     
-
-    
-//    @IBAction func changeSortCriteria(sender: UISegmentedControl)
-//    {
-//        
-//        TimeSegmentedControl.addTarget(self, action: "action:", forControlEvents: .TouchUpInside)
-//
-//        if sender.selectedSegmentIndex == 0
-//        {
-//            
-//        }
-//        else if sender.selectedSegmentIndex == 1
-//        {
-//            
-//        }
-//        else if sender.selectedSegmentIndex == 2
-//        {
-//            
-//        }
-//        else if sender.selectedSegmentIndex == 3
-//        {
-//            
-//        }
-//        else
-//        {
-//            
-//        }
-//        
-//    }
-    
     // MARK: Steps_Check_List (TableView)
     
 
@@ -246,7 +201,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         @IBAction func addTodo(sender: UIButton)
         {
             let todoItem = NSEntityDescription.insertNewObjectForEntityForName("Steps", inManagedObjectContext: managedObjectContext) as! Steps
-            todoArray.append(todoItem)
+            stepsArray.append(todoItem)
             tableView.reloadData()
         }
         
@@ -257,7 +212,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             let indexPath = tableView.indexPathForCell(cell)
             let todoItem = stepsArray[indexPath!.row]
             
-            todoItem.title = cell.titleTextField.text //just in case they don't press enter when they're typing in their todo and just immediately check it off
+            todoItem.title = cell.stepsLabel.text //just in case they don't press enter when they're typing in their todo and just immediately check it off
             
             if sender.currentImage == uncheckImg
             {
@@ -290,12 +245,12 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
             catch
             {
                 let nserror = error as NSError
-                NSLog("WHOOPS SOMETHING WENT WRONG AHAHA \(nserror), \(nserror.userInfo)")
+                NSLog(" SOMETHING WENT WRONG \(nserror), \(nserror.userInfo)")
                 abort() //<<<<<
             }
         }
     }
 
-    
-    
-}
+
+
+

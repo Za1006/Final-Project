@@ -1,5 +1,5 @@
 //
-//  Steps.swift
+//  Steps+CoreDataProperties.swift
 //  GetWell
 //
 //  Created by Keron Williams on 12/16/15.
@@ -9,9 +9,10 @@
 import Foundation
 import CoreData
 
-class Steps: NSManagedObject
+extension Steps
 {
-    
-    // Insert code here to add functionality to your managed object subclass
+    @NSManaged var isDone: Bool
+    @NSManaged var title: String?
+    @NSManaged var date: String?
     
 }

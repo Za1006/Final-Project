@@ -199,7 +199,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl5-Fc-kz7">
                                                     <rect key="frame" x="8" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHq-yS-6Pl">
@@ -209,7 +209,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uP-KC-du2">
                                                     <rect key="frame" x="428" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -272,6 +272,9 @@
                                 <exclude reference="Zp3-2h-uAf"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="LyI-Iv-dSl"/>
+                                <exclude reference="oTr-Bh-OR5"/>
+                                <exclude reference="wGM-7L-3ne"/>
                                 <exclude reference="Gx5-gZ-PIq"/>
                                 <exclude reference="KDg-1V-Fxa"/>
                                 <exclude reference="ZfJ-0g-zjN"/>
@@ -282,9 +285,6 @@
                                 <exclude reference="Ke1-dY-gol"/>
                                 <exclude reference="noI-iS-aFG"/>
                                 <exclude reference="9Pm-IW-zuU"/>
-                                <exclude reference="LyI-Iv-dSl"/>
-                                <exclude reference="oTr-Bh-OR5"/>
-                                <exclude reference="wGM-7L-3ne"/>
                                 <exclude reference="BzI-q9-aU1"/>
                             </mask>
                         </variation>
@@ -293,10 +293,10 @@
                                 <include reference="Zp3-2h-uAf"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="9Pm-IW-zuU"/>
                                 <include reference="LyI-Iv-dSl"/>
                                 <include reference="oTr-Bh-OR5"/>
                                 <exclude reference="wGM-7L-3ne"/>
+                                <include reference="9Pm-IW-zuU"/>
                             </mask>
                         </variation>
                     </view>
@@ -331,7 +331,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeCountdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31L-t4-fJw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="timeCountdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31L-t4-fJw">
                                 <rect key="frame" x="183" y="416" width="234" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
