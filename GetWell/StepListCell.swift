@@ -12,7 +12,7 @@ class StepListCell: UITableViewCell
 {
     @IBOutlet weak var stepsLabel: UILabel!
     @IBOutlet weak var checkBox: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()

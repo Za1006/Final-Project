@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Automatic">
-    <entity name="Steps" syncable="YES">
-        <attribute name="isDone" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Entity" representedClassName=".Entity" syncable="YES">
+        <attribute name="item" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="something" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Steps" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Entity" positionX="-54" positionY="-9" width="128" height="75"/>
     </elements>
 </model>
