@@ -9,16 +9,17 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var itemDescription = Array<Entity>()
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var newTask: UIButton!
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        title = "Task List"
         
         let fetchRequest = NSFetchRequest(entityName: "Entity")
         do
@@ -56,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         let aTask = itemDescription[indexPath.row]
         if aTask.item == nil
         {
-            cell.toDoText.becomeFirstResponder()
+//            cell.toDoText.becomeFirstResponder()
         }
         else
         {
@@ -79,7 +80,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
             itemDescription.removeAtIndex(indexPath.row)
             managedObjectContext.deleteObject(aTask)
             
-            (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
+//            (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
+            saveContext()
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
@@ -102,7 +104,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
             aTask.something = toDoText.text
             toDoText.resignFirstResponder()
             
-            (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
+//            (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
+            saveContext()
         }
         
         return rc
@@ -129,13 +132,29 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         {
             cell.backgroundColor = UIColor.whiteColor()
             sender.setTitle("☐", forState: UIControlState.Normal)
-            aTask.done = false
+            aTask.item = false
         }
         else
         {
             cell.backgroundColor = UIColor.greenColor()
             sender.setTitle("☑", forState: UIControlState.Normal)
-            aTask.done = true
+            aTask.item = true
+        }
+    }
+    
+    //MARK: - Private
+    
+    func saveContext()
+    {
+        do
+        {
+            try managedObjectContext.save()
+        }
+        catch
+        {
+            let nserror = error as NSError
+            NSLog("Unresoved error \(nserror), \(nserror.userInfo)")
+            abort()
         }
     }
 }

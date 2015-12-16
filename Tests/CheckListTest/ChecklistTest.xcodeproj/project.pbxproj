@@ -14,8 +14,8 @@
 		4CA20BEF1C21FF0B00DA57DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BEE1C21FF0B00DA57DA /* Assets.xcassets */; };
 		4CA20BF21C21FF0B00DA57DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BF01C21FF0B00DA57DA /* LaunchScreen.storyboard */; };
 		4CA20C021C220BBD00DA57DA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C011C220BBD00DA57DA /* TableViewCell.swift */; };
-		4CA20C071C220DF400DA57DA /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C051C220DF400DA57DA /* Entity+CoreDataProperties.swift */; };
-		4CA20C081C220DF400DA57DA /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C061C220DF400DA57DA /* Entity.swift */; };
+		4CA20C0F1C221B5E00DA57DA /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C0D1C221B5E00DA57DA /* Entity+CoreDataProperties.swift */; };
+		4CA20C101C221B5E00DA57DA /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C0E1C221B5E00DA57DA /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		4CA20BF31C21FF0B00DA57DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA20C001C22069500DA57DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		4CA20C011C220BBD00DA57DA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		4CA20C051C220DF400DA57DA /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4CA20C061C220DF400DA57DA /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		4CA20C0D1C221B5E00DA57DA /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CA20C0E1C221B5E00DA57DA /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 		4CA20BE31C21FF0B00DA57DA /* ChecklistTest */ = {
 			isa = PBXGroup;
 			children = (
-				4CA20C011C220BBD00DA57DA /* TableViewCell.swift */,
-				4CA20BE61C21FF0B00DA57DA /* ViewController.swift */,
 				4CA20BE81C21FF0B00DA57DA /* Main.storyboard */,
+				4CA20BE61C21FF0B00DA57DA /* ViewController.swift */,
+				4CA20C011C220BBD00DA57DA /* TableViewCell.swift */,
 				4CA20BFE1C22040400DA57DA /* Misc */,
 			);
 			path = ChecklistTest;
@@ -75,8 +75,8 @@
 		4CA20BFD1C2202A200DA57DA /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				4CA20C051C220DF400DA57DA /* Entity+CoreDataProperties.swift */,
-				4CA20C061C220DF400DA57DA /* Entity.swift */,
+				4CA20C0D1C221B5E00DA57DA /* Entity+CoreDataProperties.swift */,
+				4CA20C0E1C221B5E00DA57DA /* Entity.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA20C071C220DF400DA57DA /* Entity+CoreDataProperties.swift in Sources */,
+				4CA20C0F1C221B5E00DA57DA /* Entity+CoreDataProperties.swift in Sources */,
 				4CA20BE71C21FF0B00DA57DA /* ViewController.swift in Sources */,
-				4CA20C081C220DF400DA57DA /* Entity.swift in Sources */,
+				4CA20C101C221B5E00DA57DA /* Entity.swift in Sources */,
 				4CA20BED1C21FF0B00DA57DA /* ChecklistTest.xcdatamodeld in Sources */,
 				4CA20C021C220BBD00DA57DA /* TableViewCell.swift in Sources */,
 				4CA20BE51C21FF0B00DA57DA /* AppDelegate.swift in Sources */,
