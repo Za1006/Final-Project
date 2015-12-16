@@ -7,22 +7,136 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource
 {
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    var itemDescription = Array<Entity>()
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        title = "Task List"
+        
+        let fetchRequest = NSFetchRequest(entityName: "Entity")
+        do
+        {
+            let fetchResults = try managedObjectContext.executeFetchRequest(fetchRequest) as? [Entity]
+            itemDescription = fetchResults!
+        }
+        catch
+        {
+            let nserror = error as NSError
+            NSLog("Unresoved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
+
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return itemDescription.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("aCell", forIndexPath: indexPath) as! TableViewCell
+        
+        let aTask = itemDescription[indexPath.row]
+        if aTask.item == nil
+        {
+            cell.toDoText.becomeFirstResponder()
+        }
+        else
+        {
+            cell.toDoText.text = aTask.something
+        }
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        if editingStyle == .Delete
+        {
+            let aTask = itemDescription[indexPath.row]
+            itemDescription.removeAtIndex(indexPath.row)
+            managedObjectContext.deleteObject(aTask)
+            
+            (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
+            
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
+    
+    //     MARK: TextField Delegate
+    
+    func textFieldShouldReturn(toDoText: UITextField) -> Bool
+    {
+        var rc = false
+        
+        if toDoText.text != ""
+        {
+            rc = true
+            let contentView = toDoText.superview
+            let cell = contentView?.superview as! TableViewCell
+            let indexPath = tableView.indexPathForCell(cell)
 
+            let aTask = itemDescription[indexPath!.row]
+            aTask.something = toDoText.text
+            toDoText.resignFirstResponder()
+            
+            (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
+        }
+        
+        return rc
+    }
+    
+    // MARK: Action Handlers
+    
+    @IBAction func newTask(sender: UIBarButtonItem)
+    {
+        let aTask = NSEntityDescription.insertNewObjectForEntityForName("Entity", inManagedObjectContext: managedObjectContext) as! Entity
+        itemDescription.append(aTask)
+        tableView.reloadData()
+    }
+    
+    @IBAction func doneButton(sender: UIButton)
+    {
+        let contentView = sender.superview
+        let cell = contentView?.superview as! TableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
 
+        let aTask = itemDescription[indexPath!.row]
+        
+        if sender.currentTitle == "☑"
+        {
+            cell.backgroundColor = UIColor.whiteColor()
+            sender.setTitle("☐", forState: UIControlState.Normal)
+            aTask.done = false
+        }
+        else
+        {
+            cell.backgroundColor = UIColor.greenColor()
+            sender.setTitle("☑", forState: UIControlState.Normal)
+            aTask.done = true
+        }
+    }
 }
 

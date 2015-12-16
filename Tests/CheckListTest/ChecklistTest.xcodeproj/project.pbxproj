@@ -13,6 +13,9 @@
 		4CA20BED1C21FF0B00DA57DA /* ChecklistTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20BEB1C21FF0B00DA57DA /* ChecklistTest.xcdatamodeld */; };
 		4CA20BEF1C21FF0B00DA57DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BEE1C21FF0B00DA57DA /* Assets.xcassets */; };
 		4CA20BF21C21FF0B00DA57DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BF01C21FF0B00DA57DA /* LaunchScreen.storyboard */; };
+		4CA20C021C220BBD00DA57DA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C011C220BBD00DA57DA /* TableViewCell.swift */; };
+		4CA20C071C220DF400DA57DA /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C051C220DF400DA57DA /* Entity+CoreDataProperties.swift */; };
+		4CA20C081C220DF400DA57DA /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20C061C220DF400DA57DA /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		4CA20BEE1C21FF0B00DA57DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA20BF11C21FF0B00DA57DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA20BF31C21FF0B00DA57DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA20C001C22069500DA57DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4CA20C011C220BBD00DA57DA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4CA20C051C220DF400DA57DA /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CA20C061C220DF400DA57DA /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 		4CA20BD81C21FF0B00DA57DA = {
 			isa = PBXGroup;
 			children = (
+				4CA20BFD1C2202A200DA57DA /* CoreData */,
 				4CA20BE31C21FF0B00DA57DA /* ChecklistTest */,
 				4CA20BE21C21FF0B00DA57DA /* Products */,
 			);
@@ -56,15 +64,33 @@
 		4CA20BE31C21FF0B00DA57DA /* ChecklistTest */ = {
 			isa = PBXGroup;
 			children = (
-				4CA20BE41C21FF0B00DA57DA /* AppDelegate.swift */,
+				4CA20C011C220BBD00DA57DA /* TableViewCell.swift */,
 				4CA20BE61C21FF0B00DA57DA /* ViewController.swift */,
 				4CA20BE81C21FF0B00DA57DA /* Main.storyboard */,
+				4CA20BFE1C22040400DA57DA /* Misc */,
+			);
+			path = ChecklistTest;
+			sourceTree = "<group>";
+		};
+		4CA20BFD1C2202A200DA57DA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4CA20C051C220DF400DA57DA /* Entity+CoreDataProperties.swift */,
+				4CA20C061C220DF400DA57DA /* Entity.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		4CA20BFE1C22040400DA57DA /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				4CA20BE41C21FF0B00DA57DA /* AppDelegate.swift */,
 				4CA20BEE1C21FF0B00DA57DA /* Assets.xcassets */,
 				4CA20BF01C21FF0B00DA57DA /* LaunchScreen.storyboard */,
 				4CA20BF31C21FF0B00DA57DA /* Info.plist */,
 				4CA20BEB1C21FF0B00DA57DA /* ChecklistTest.xcdatamodeld */,
 			);
-			path = ChecklistTest;
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA20C071C220DF400DA57DA /* Entity+CoreDataProperties.swift in Sources */,
 				4CA20BE71C21FF0B00DA57DA /* ViewController.swift in Sources */,
+				4CA20C081C220DF400DA57DA /* Entity.swift in Sources */,
 				4CA20BED1C21FF0B00DA57DA /* ChecklistTest.xcdatamodeld in Sources */,
+				4CA20C021C220BBD00DA57DA /* TableViewCell.swift in Sources */,
 				4CA20BE51C21FF0B00DA57DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +181,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CA20BE91C21FF0B00DA57DA /* Base */,
+				4CA20C001C22069500DA57DA /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -289,6 +319,7 @@
 				4CA20BF81C21FF0B00DA57DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
