@@ -25,9 +25,12 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 {
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     @IBOutlet weak var tableView: UITableView!
 =======
 <<<<<<< HEAD
+>>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+=======
 >>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
     
 =======

@@ -108,6 +108,7 @@
 
 /* Begin PBXGroup section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		5D5878A31C2116A100B36E92 /* Img */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +163,8 @@
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+=======
 		4C5D1A161C1F40E0003C5294 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +184,9 @@
 			sourceTree = "<group>";
 		};
 >>>>>>> master
+<<<<<<< HEAD
+>>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+=======
 >>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
 		7DFC7C0FD61A5736350D6801 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -221,13 +227,24 @@
 				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AA36F4271C1F28FF00CA21F6 /* Songs.swift */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				AAF556561C2077A6009BC1B7 /* Timers.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+=======
+>>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 =======
 <<<<<<< HEAD
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+=======
+				AAF556561C2077A6009BC1B7 /* Timers.swift */,
+				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
+<<<<<<< HEAD
+				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
+>>>>>>> master
+>>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+=======
 =======
 				AAF556561C2077A6009BC1B7 /* Timers.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
