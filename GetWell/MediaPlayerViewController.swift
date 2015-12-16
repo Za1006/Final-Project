@@ -15,8 +15,7 @@ import AVFoundation
 class MediaPlayerViewController: UIViewController
 {
    
-    @IBOutlet var timeSelected: UILabel!
-    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var timeCountdown: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
@@ -54,11 +53,6 @@ class MediaPlayerViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-//        func timerWasChosen(timerCount: Int)
-//        {
-////            originalCount = timerCount
-//        }
-//    
 
     /*
     // MARK: - Navigation

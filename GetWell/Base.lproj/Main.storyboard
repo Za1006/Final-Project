@@ -354,6 +354,9 @@
                             <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="31L-t4-fJw" secondAttribute="bottom" constant="163" id="St1-pJ-D0H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeCountdown" destination="31L-t4-fJw" id="1HR-0K-ckW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-OI-QJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
