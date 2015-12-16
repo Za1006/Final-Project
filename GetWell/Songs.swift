@@ -12,6 +12,7 @@ import AVFoundation
 
 class Song
 {
+    
     let title: String
     let artist: String
     let filename: String
@@ -24,5 +25,5 @@ class Song
         self.artist = artist
         self.filename = filename
         self.playerItem = AVPlayerItem(URL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(filename, ofType: "mp3")!))
-    }
+ }
 }

@@ -12,25 +12,32 @@ import UIKit
 {
     func dateWasChosen(date: NSDate)
 }
+
+@objc protocol StepsListViewDelegate
+{
+    func stepsChecked(buttonTapped: Int)
+}
 @objc protocol MediaPlayerViewDelegate
 {
     func timerWasChosen(timerCount: Int)
-    
 }
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate, MediaPlayerViewDelegate
+
+
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate, StepsListViewDelegate,MediaPlayerViewDelegate
 {
     
+    
     var delegate: MediaPlayerViewController?
-
     var originalCount = 120
     var timer: NSTimer?
     
     
-
     @IBOutlet weak var nextMeditation: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var image: UIImage!
-    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
+    
+    var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
 
     override func viewDidLoad()
     {
@@ -59,8 +66,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         {
             let destVC = segue.destinationViewController as! SetReminderPopOverViewController
                 destVC.popoverPresentationController?.delegate = self
-                destVC.delegate = self
-                destVC.preferredContentSize = CGSizeMake(400.0, 216.0)
+            let contentHeight = 50.0 * CGFloat(remainingCharacters.count)
+                destVC.preferredContentSize = CGSizeMake(400.0, contentHeight)
         }
     }
     
@@ -86,8 +93,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         let localNotification = UILocalNotification()
         localNotification.fireDate = date
-                print(NSDate())
-                print(localNotification.fireDate)
+        print(NSDate())
+        print(localNotification.fireDate)
         localNotification.timeZone = NSTimeZone.localTimeZone()
         localNotification.alertBody = "Time to Relax"
         localNotification.alertAction = "Open App"
@@ -95,16 +102,26 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
+
+
+   
     
     func dateFormat(x: NSDate) -> String
     {
         let formatter = NSDateFormatter()
-        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy HH:mm", options: 0, locale: NSLocale.currentLocale())
+        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy", options: 0, locale: NSLocale.currentLocale())
         let formattedTime = formatter.stringFromDate(x).uppercaseString
         
         return String(formattedTime)
     }
+    
+    func stepsChecked(buttonTapped: Int)
+    {
+        
+    }
+    
 
+    
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
         
@@ -112,7 +129,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 
         if sender.selectedSegmentIndex == 0
         {
-            loadView()
+            
         }
         else if sender.selectedSegmentIndex == 1
         {
@@ -132,5 +149,9 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         }
         
     }
+    
+    // MARK: Steps_Check_List (TableView)
+    
+    
     
 }

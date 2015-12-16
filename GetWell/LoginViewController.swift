@@ -5,11 +5,11 @@
 //  Created by Elizabeth Yeh on 12/9/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
+
 import UIKit
 
 class LoginViewController: UIViewController
 {
-    
 
     
     @IBOutlet weak var usernameTextField: UITextField!
@@ -18,6 +18,8 @@ class LoginViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        usernameTextField.becomeFirstResponder()
 
     }
 

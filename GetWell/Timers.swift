@@ -17,10 +17,10 @@ class Timer
     
     init(fiveMinutesCount: Int, tenMinutesCount: Int, fifteenMinutesCount: Int, twentyMinutesCount: Int)
     {
-        self.fiveMinutesCount = 5
-        self.tenMinutesCount = 10
-        self.fifteenMinutesCount = 15
-        self.twentyMinutesCount = 20
+        self.fiveMinutesCount = 300
+        self.tenMinutesCount = 600
+        self.fifteenMinutesCount = 900
+        self.twentyMinutesCount = 1200
     }
     
 }

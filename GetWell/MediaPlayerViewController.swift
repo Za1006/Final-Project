@@ -16,6 +16,7 @@ class MediaPlayerViewController: UIViewController
 {
    
     @IBOutlet var timeSelected: UILabel!
+    @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
@@ -26,11 +27,10 @@ class MediaPlayerViewController: UIViewController
     var nowPlaying: Bool = false
     
     var timer: NSTimer?
-    var timers = Array<Timer>()
-    var currentTimerSet: Timer?
+
+
 
     var delegate: MediaPlayerViewDelegate?
-    
   
     
     override func viewDidLoad()
@@ -48,13 +48,29 @@ class MediaPlayerViewController: UIViewController
 //        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
     }
 
+
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
-    
+//        func timerWasChosen(timerCount: Int)
+//        {
+////            originalCount = timerCount
+//        }
+//    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+    
     @IBAction func playPauseTapped(sender: UIButton)
     {
         togglePlayback(!nowPlaying)
@@ -131,7 +147,6 @@ class MediaPlayerViewController: UIViewController
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
                         songTitleLabel.text = song.title
                         artistLabel.text = song.artist
-//                      countDownView.image = UIPickerView(time: song.countDownView)
         }
     }
     
