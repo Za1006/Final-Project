@@ -144,6 +144,10 @@ class MainController: UIViewController
         let acoustic = Song(title: "Happiness", artist: "Benjamin Tissot", filename: "happiness", albumArtwork: "Acoustic")
         songs.append(acoustic)
         currentSong = acoustic
+        
+        let betterdays = Song(title: "BetterDays", artist: "Ben", filename: "bensound-betterdays", albumArtwork: "Ben")
+        songs.append(betterdays)
+        currentSong = betterdays
     }
     
     func loadCurrentSong()

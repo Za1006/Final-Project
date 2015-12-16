@@ -17,6 +17,17 @@
 		4CA20B6C1C20AADF00DA57DA /* happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */; };
 		4CA20B6E1C20CFCF00DA57DA /* sessionOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */; };
 		4CA20B701C20D0A200DA57DA /* sessionOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */; };
+		4CA20BAC1C21E88F00DA57DA /* bensound-acousticbreeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA11C21E88F00DA57DA /* bensound-acousticbreeze.mp3 */; };
+		4CA20BAD1C21E88F00DA57DA /* bensound-betterdays.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA21C21E88F00DA57DA /* bensound-betterdays.mp3 */; };
+		4CA20BAE1C21E88F00DA57DA /* bensound-deepblue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA31C21E88F00DA57DA /* bensound-deepblue.mp3 */; };
+		4CA20BAF1C21E88F00DA57DA /* bensound-enigmatic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA41C21E88F00DA57DA /* bensound-enigmatic.mp3 */; };
+		4CA20BB01C21E88F00DA57DA /* bensound-india.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA51C21E88F00DA57DA /* bensound-india.mp3 */; };
+		4CA20BB11C21E88F00DA57DA /* bensound-newdawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA61C21E88F00DA57DA /* bensound-newdawn.mp3 */; };
+		4CA20BB21C21E88F00DA57DA /* bensound-november.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA71C21E88F00DA57DA /* bensound-november.mp3 */; };
+		4CA20BB31C21E88F00DA57DA /* bensound-relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA81C21E88F00DA57DA /* bensound-relaxing.mp3 */; };
+		4CA20BB41C21E88F00DA57DA /* bensound-sadday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BA91C21E88F00DA57DA /* bensound-sadday.mp3 */; };
+		4CA20BB51C21E88F00DA57DA /* bensound-slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BAA1C21E88F00DA57DA /* bensound-slowmotion.mp3 */; };
+		4CA20BB61C21E88F00DA57DA /* bensound-tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20BAB1C21E88F00DA57DA /* bensound-tomorrow.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +43,17 @@
 		4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happiness.mp3; sourceTree = "<group>"; };
 		4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sessionOver.m4a; sourceTree = "<group>"; };
 		4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sessionOver.wav; sourceTree = "<group>"; };
+		4CA20BA11C21E88F00DA57DA /* bensound-acousticbreeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-acousticbreeze.mp3"; sourceTree = "<group>"; };
+		4CA20BA21C21E88F00DA57DA /* bensound-betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-betterdays.mp3"; sourceTree = "<group>"; };
+		4CA20BA31C21E88F00DA57DA /* bensound-deepblue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-deepblue.mp3"; sourceTree = "<group>"; };
+		4CA20BA41C21E88F00DA57DA /* bensound-enigmatic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-enigmatic.mp3"; sourceTree = "<group>"; };
+		4CA20BA51C21E88F00DA57DA /* bensound-india.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-india.mp3"; sourceTree = "<group>"; };
+		4CA20BA61C21E88F00DA57DA /* bensound-newdawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-newdawn.mp3"; sourceTree = "<group>"; };
+		4CA20BA71C21E88F00DA57DA /* bensound-november.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-november.mp3"; sourceTree = "<group>"; };
+		4CA20BA81C21E88F00DA57DA /* bensound-relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-relaxing.mp3"; sourceTree = "<group>"; };
+		4CA20BA91C21E88F00DA57DA /* bensound-sadday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-sadday.mp3"; sourceTree = "<group>"; };
+		4CA20BAA1C21E88F00DA57DA /* bensound-slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-slowmotion.mp3"; sourceTree = "<group>"; };
+		4CA20BAB1C21E88F00DA57DA /* bensound-tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-tomorrow.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +93,7 @@
 				4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */,
 				4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */,
 				4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */,
+				4CA20BA01C21E88F00DA57DA /* FreeMusicFile */,
 				4CA20B621C20841B00DA57DA /* Extra */,
 			);
 			path = "Testing Segmented Control";
@@ -85,6 +108,24 @@
 				4CA20B5A1C207E6B00DA57DA /* Info.plist */,
 			);
 			name = Extra;
+			sourceTree = "<group>";
+		};
+		4CA20BA01C21E88F00DA57DA /* FreeMusicFile */ = {
+			isa = PBXGroup;
+			children = (
+				4CA20BA11C21E88F00DA57DA /* bensound-acousticbreeze.mp3 */,
+				4CA20BA21C21E88F00DA57DA /* bensound-betterdays.mp3 */,
+				4CA20BA31C21E88F00DA57DA /* bensound-deepblue.mp3 */,
+				4CA20BA41C21E88F00DA57DA /* bensound-enigmatic.mp3 */,
+				4CA20BA51C21E88F00DA57DA /* bensound-india.mp3 */,
+				4CA20BA61C21E88F00DA57DA /* bensound-newdawn.mp3 */,
+				4CA20BA71C21E88F00DA57DA /* bensound-november.mp3 */,
+				4CA20BA81C21E88F00DA57DA /* bensound-relaxing.mp3 */,
+				4CA20BA91C21E88F00DA57DA /* bensound-sadday.mp3 */,
+				4CA20BAA1C21E88F00DA57DA /* bensound-slowmotion.mp3 */,
+				4CA20BAB1C21E88F00DA57DA /* bensound-tomorrow.mp3 */,
+			);
+			path = FreeMusicFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,12 +187,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA20BAF1C21E88F00DA57DA /* bensound-enigmatic.mp3 in Resources */,
+				4CA20BB21C21E88F00DA57DA /* bensound-november.mp3 in Resources */,
 				4CA20B6C1C20AADF00DA57DA /* happiness.mp3 in Resources */,
 				4CA20B591C207E6B00DA57DA /* LaunchScreen.storyboard in Resources */,
+				4CA20BAE1C21E88F00DA57DA /* bensound-deepblue.mp3 in Resources */,
 				4CA20B561C207E6B00DA57DA /* Assets.xcassets in Resources */,
+				4CA20BB31C21E88F00DA57DA /* bensound-relaxing.mp3 in Resources */,
+				4CA20BAC1C21E88F00DA57DA /* bensound-acousticbreeze.mp3 in Resources */,
+				4CA20BB41C21E88F00DA57DA /* bensound-sadday.mp3 in Resources */,
 				4CA20B541C207E6B00DA57DA /* Main.storyboard in Resources */,
+				4CA20BB61C21E88F00DA57DA /* bensound-tomorrow.mp3 in Resources */,
 				4CA20B6E1C20CFCF00DA57DA /* sessionOver.m4a in Resources */,
+				4CA20BB51C21E88F00DA57DA /* bensound-slowmotion.mp3 in Resources */,
 				4CA20B701C20D0A200DA57DA /* sessionOver.wav in Resources */,
+				4CA20BB11C21E88F00DA57DA /* bensound-newdawn.mp3 in Resources */,
+				4CA20BAD1C21E88F00DA57DA /* bensound-betterdays.mp3 in Resources */,
+				4CA20BB01C21E88F00DA57DA /* bensound-india.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
