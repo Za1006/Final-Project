@@ -12,30 +12,29 @@ import UIKit
 {
     func dateWasChosen(date: NSDate)
 }
-@objc protocol MediaPlayerViewDelegate
-{
-    func timerWasChosen(timerCount: Int)
-}
+
 @objc protocol StepsListViewDelegate
 {
     func stepsChecked(buttonTapped: Int)
 }
+@objc protocol MediaPlayerViewDelegate
+{
+    func timerWasChosen(timerCount: Int)
+}
 
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate,MediaPlayerViewDelegate, StepsListViewDelegate
+
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate, StepsListViewDelegate,MediaPlayerViewDelegate
 {
     
-    @IBOutlet weak var tableView: UITableView!
     
     var delegate: MediaPlayerViewController?
-
     var originalCount = 120
     var timer: NSTimer?
     
     
-
-
+    @IBOutlet weak var nextMeditation: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var image: UIImage!
-    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
     
     var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
@@ -90,15 +89,22 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     func dateWasChosen(date: NSDate)
     {
-//        destinationTime.text = dateFormat(date)
+        nextMeditation.text = dateFormat(date)
+        
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = date
+        print(NSDate())
+        print(localNotification.fireDate)
+        localNotification.timeZone = NSTimeZone.localTimeZone()
+        localNotification.alertBody = "Time to Relax"
+        localNotification.alertAction = "Open App"
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
-    
 
-    func stepsChecked(buttonTapped: Int)
-    {
-    
-    }
-    
+
+   
     
     func dateFormat(x: NSDate) -> String
     {
@@ -108,6 +114,12 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         return String(formattedTime)
     }
+    
+    func stepsChecked(buttonTapped: Int)
+    {
+        
+    }
+    
 
     
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
@@ -117,7 +129,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 
         if sender.selectedSegmentIndex == 0
         {
-            loadView()
+            
         }
         else if sender.selectedSegmentIndex == 1
         {
