@@ -185,8 +185,8 @@
                                 <color key="textColor" red="0.96439627314430454" green="1" blue="0.02964774528058689" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-jA-8xg">
-                                <rect key="frame" x="41" y="392" width="519" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-jA-8xg">
+                                <rect key="frame" x="41" y="392" width="519" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Skip to Session">
                                     <color key="titleColor" red="0.14206403493881226" green="0.33095026016235352" blue="0.68009668588638306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -243,10 +243,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
-                        <outlet property="timeSegmentedControl" destination="A8E-Nn-O1a" id="axe-AZ-qwS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,7 +276,6 @@
                                 </segments>
                                 <color key="tintColor" red="0.31848025321960449" green="0.4196089506149292" blue="0.64678847789764404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="changeSortCriteria:" destination="mtC-ec-np1" eventType="touchUpInside" id="xyf-qG-OC6"/>
                                     <action selector="segmentedIndexTapped:" destination="4t6-Ik-EYg" eventType="touchUpInside" id="mmq-F4-FBB"/>
                                 </connections>
                             </segmentedControl>

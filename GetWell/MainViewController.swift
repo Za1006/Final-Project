@@ -29,6 +29,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     @IBOutlet weak var nextMeditation: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var image: UIImage!
+    @IBOutlet var skipSessionLabel: UILabel!
+
     
     var remainingCharacters = []
 
