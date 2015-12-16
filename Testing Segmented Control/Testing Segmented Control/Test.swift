@@ -45,7 +45,7 @@ class MainController: UIViewController
         if sender.selectedSegmentIndex == 0
         {
             stopTimer()
-            originalCount = 10
+            originalCount = 300
             countLabel.text = "5:00"
             startTimer()
             loadCurrentSong()
@@ -55,7 +55,7 @@ class MainController: UIViewController
         else if sender.selectedSegmentIndex == 1
         {
             stopTimer()
-            originalCount = 10
+            originalCount = 600
             countLabel.text = "10:00"
             startTimer()
             loadCurrentSong()
