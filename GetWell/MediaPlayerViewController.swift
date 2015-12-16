@@ -29,10 +29,8 @@ class MediaPlayerViewController: UIViewController
     var nowPlaying: Bool = false
     
     var timer: NSTimer?
-    var index0Count = 300
-    var index1Count = 600
-    var index2Count = 900
-    var index3Count = 1200
+    var originalCount = 300
+    
 
     var delegate: MainViewController?
   
@@ -44,11 +42,6 @@ class MediaPlayerViewController: UIViewController
         configurePlaylist()
         loadCurrentSong()
 
-    }
-  
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
     }
 
 
@@ -78,40 +71,36 @@ class MediaPlayerViewController: UIViewController
         
         if sender.selectedSegmentIndex == 0
         {
-            index0Count = 300
+            originalCount = 300
             timeCountdown.text = "5:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
-            setNotification()
             
         }
         else if sender.selectedSegmentIndex == 1
         {
-            index1Count = 600
+            originalCount = 600
             timeCountdown.text = "10:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
-            setNotification()
         }
         else if sender.selectedSegmentIndex == 2
         {
-            index2Count = 900
+            originalCount = 900
             timeCountdown.text = "15:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
-            setNotification()
         }
         else if sender.selectedSegmentIndex == 3
         {
-            index3Count = 1200
+            originalCount = 1200
             timeCountdown.text = "20:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
-            setNotification()
         }
         
         
@@ -120,6 +109,7 @@ class MediaPlayerViewController: UIViewController
     func startTimer()
     {
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateUI", userInfo: nil, repeats: true)
+        updateUI()
     }
     
     func stopTimer()
@@ -130,23 +120,29 @@ class MediaPlayerViewController: UIViewController
     
     func updateUI()
     {
-        index0Count = index0Count - 1
-        let index0MinuteCount = index0Count/60
-        let index0SecondCount = index0Count%60
-        timeCountdown.text = String("\(index0MinuteCount):\(index0SecondCount)")
+        originalCount = originalCount - 1
+        let newMinuteCount = originalCount/60
+        let newSecondCount = originalCount%60
+        timeCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
         
         
-        if index0Count == 0 && index1Count == 0 && index2Count == 0 && index3Count == 0
+        if originalCount == 0
         {
             stopTimer()
+            setNotification()
+            
         }
     }
 
     func setNotification()
     {
-        if index0Count == 0 && index1Count == 0 && index2Count == 0 && index3Count == 0
+        if originalCount == 0
         {
-            // beep beep
+            let soundURL = NSBundle.mainBundle().URLForResource("sessionOver", withExtension: "m4a")!
+            var soundID: SystemSoundID = 0
+            AudioServicesCreateSystemSoundID(soundURL,&soundID)
+            AudioServicesPlayAlertSound(soundID)
+            
         }
     }
     

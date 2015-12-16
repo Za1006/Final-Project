@@ -50,7 +50,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        if segue.identifier == "ShowCountdownSegue"
+        if segue.identifier == "ShowMediaSegue"
         {
             let mediaPlayerVC = segue.destinationViewController as! MediaPlayerViewController
             mediaPlayerVC.delegate = self

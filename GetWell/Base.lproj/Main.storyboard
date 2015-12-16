@@ -192,7 +192,7 @@
                                     <color key="titleColor" red="0.14206403493881226" green="0.33095026016235352" blue="0.68009668588638306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4t6-Ik-EYg" kind="show" identifier="ShowCountdownSegue" id="hMe-Rv-LlX"/>
+                                    <segue destination="4t6-Ik-EYg" kind="show" identifier="ShowMediaSegue" id="hMe-Rv-LlX"/>
                                 </connections>
                             </button>
                         </subviews>
