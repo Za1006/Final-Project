@@ -185,28 +185,7 @@
                                 <color key="textColor" red="0.96439627314430454" green="1" blue="0.02964774528058689" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-BP-Zl5">
-                                <rect key="frame" x="0.0" y="421" width="600" height="179"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="179" id="WcS-BR-vTQ"/>
-                                </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StepsListCell" id="lXb-Ol-NSu">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lXb-Ol-NSu" id="R5u-cN-Zuu">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="mtC-ec-np1" id="xp4-yH-Xns"/>
-                                    <outlet property="delegate" destination="mtC-ec-np1" id="g5m-xN-Mml"/>
-                                </connections>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-jA-8xg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-jA-8xg">
                                 <rect key="frame" x="41" y="392" width="519" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Skip to Session">
@@ -220,18 +199,14 @@
                         <color key="backgroundColor" red="0.50588235294117645" green="0.84313725490196079" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0EH-jA-8xg" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="41" id="0Wc-jp-Suh"/>
-                            <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="fMU-BP-Zl5" secondAttribute="bottom" id="7cf-S9-NsX"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="813-8G-fTa"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-46" id="A5j-Z7-nQE"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
-                            <constraint firstAttribute="trailing" secondItem="fMU-BP-Zl5" secondAttribute="trailing" id="CiV-en-Zne"/>
-                            <constraint firstItem="fMU-BP-Zl5" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="FZe-OQ-UyO"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-29" id="Gx5-gZ-PIq"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" id="HL9-rM-Rso"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" constant="15" id="KDg-1V-Fxa"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" constant="10" id="Ke1-dY-gol"/>
                             <constraint firstItem="0EH-jA-8xg" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="M7y-Sd-RVG"/>
-                            <constraint firstItem="fMU-BP-Zl5" firstAttribute="top" secondItem="0EH-jA-8xg" secondAttribute="bottom" constant="8" id="OUW-Rh-a9a"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" id="STl-vE-kaT"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" constant="20" id="ZfJ-0g-zjN"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="eRx-W5-GbZ"/>
@@ -270,7 +245,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
-                        <outlet property="tableView" destination="fMU-BP-Zl5" id="E2s-6V-OWl"/>
                         <outlet property="timeSegmentedControl" destination="A8E-Nn-O1a" id="axe-AZ-qwS"/>
                     </connections>
                 </viewController>
