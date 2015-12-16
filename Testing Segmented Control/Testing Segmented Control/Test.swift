@@ -54,8 +54,17 @@ class MainController: UIViewController
         else if sender.selectedSegmentIndex == 1
         {
             stopTimer()
-            originalCount = 5
+            originalCount = 600
             countLabel.text = "10:00"
+            startTimer()
+            loadCurrentSong()
+            togglePlayback(true)
+        }
+        else if sender.selectedSegmentIndex == 2
+        {
+            stopTimer()
+            originalCount = 900
+            countLabel.text = "15:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
@@ -110,6 +119,7 @@ class MainController: UIViewController
             {
                 do {
                     try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+//                    try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: .DuckOthers)
                 }
                 catch _ {
                 }
