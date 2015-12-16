@@ -67,7 +67,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="signInTapped:" destination="d7q-aW-mCW" eventType="touchUpInside" id="GLw-Lb-T1q"/>
-                                    <segue destination="RiY-Yv-11Z" kind="show" identifier="ShowMainViewSegue" id="Kmq-UJ-eB9"/>
+                                    <segue destination="RiY-Yv-11Z" kind="show" identifier="GetWellViewController" id="YAl-Yz-UXm"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s05-uJ-TmJ">
@@ -193,7 +193,7 @@
                                     <segue destination="4t6-Ik-EYg" kind="show" identifier="ShowCountdownSegue" id="SMi-Mv-0hv"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start the Journey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6i-cg-MdO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Start the Journey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6i-cg-MdO">
                                 <rect key="frame" x="21" y="353" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="GK7-pr-H9g"/>
@@ -213,7 +213,7 @@
                                 <color key="textColor" red="0.96439627314430454" green="1" blue="0.02964774528058689" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gwArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-b5-sEU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="gwArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-b5-sEU">
                                 <rect key="frame" x="165" y="357" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="1uO-UX-idI"/>
@@ -291,12 +291,15 @@
                                 <exclude reference="Gx5-gZ-PIq"/>
                                 <exclude reference="KDg-1V-Fxa"/>
                                 <exclude reference="ZfJ-0g-zjN"/>
+                                <exclude reference="ed7-tf-3cy"/>
                                 <exclude reference="gFj-3h-GdU"/>
                                 <exclude reference="mnn-Wh-YSu"/>
                                 <exclude reference="qLc-EE-Zcj"/>
                                 <exclude reference="Ke1-dY-gol"/>
                                 <exclude reference="noI-iS-aFG"/>
                                 <exclude reference="f2y-9T-72R"/>
+                                <exclude reference="9hF-5f-sYR"/>
+                                <exclude reference="i7u-L4-Ec6"/>
                                 <exclude reference="iRa-f3-DGF"/>
                                 <exclude reference="3oS-FP-KEf"/>
                                 <exclude reference="acA-Kp-NFy"/>
@@ -338,20 +341,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2t8-H7-guC">
-                                <rect key="frame" x="36" y="430" width="528" height="64"/>
-                                <date key="date" timeIntervalSinceReferenceDate="471806017.62771302">
-                                    <!--2015-12-14 17:13:37 +0000-->
-                                </date>
-                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeCountdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31L-t4-fJw">
+                                <rect key="frame" x="183" y="416" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="Bgr-vd-Twn"/>
-                            <constraint firstAttribute="trailing" secondItem="2t8-H7-guC" secondAttribute="trailing" constant="36" id="DrV-u8-ccr"/>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="366" id="JTe-93-0hB"/>
-                            <constraint firstItem="2t8-H7-guC" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="36" id="q2o-SP-sH6"/>
-                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="2t8-H7-guC" secondAttribute="bottom" constant="106" id="z8F-Pd-vTM"/>
+                            <constraint firstAttribute="trailing" secondItem="31L-t4-fJw" secondAttribute="trailing" constant="183" id="4IW-UW-yS1"/>
+                            <constraint firstItem="31L-t4-fJw" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="183" id="6P2-a8-67l"/>
+                            <constraint firstItem="31L-t4-fJw" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="Ojo-6n-tlz"/>
+                            <constraint firstItem="31L-t4-fJw" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="352" id="R2K-gQ-j38"/>
+                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="31L-t4-fJw" secondAttribute="bottom" constant="163" id="St1-pJ-D0H"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -452,9 +455,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="MBr-5O-2zJ" id="c19-mM-Bhb"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
