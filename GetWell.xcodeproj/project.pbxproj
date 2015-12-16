@@ -107,20 +107,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		5D5878A31C2116A100B36E92 /* Img */ = {
+		4C5D1A161C1F40E0003C5294 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				5D5878891C1F6E1800B36E92 /* GetWellLogin2a.png */,
-				5D58788B1C1F7EF100B36E92 /* GetWellSignUp2.png */,
-				5D58788D1C1F82B100B36E92 /* GetWellSignUp2a.png */,
-				5D58788F1C1F844400B36E92 /* GetWellSignUp3.png */,
-				5D5878911C1F8BB500B36E92 /* GetWellSignUp22a.png */,
-				5D5878951C1F924A00B36E92 /* GetWellMainPage.png */,
-				5D5878931C1F8C8E00B36E92 /* GetWellSignUpFinal.png */,
-				5D5878971C1F9A2000B36E92 /* gwArrow.png */,
 			);
 			name = Img;
 			sourceTree = "<group>";
@@ -128,14 +117,14 @@
 		5D5878A41C2116C800B36E92 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
 				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
-=======
->>>>>>> master
+
+
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -161,13 +150,11 @@
 			name = StepsList;
 			sourceTree = "<group>";
 		};
-=======
-<<<<<<< HEAD
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
+
+
+
+
+
 		4C5D1A161C1F40E0003C5294 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,14 +173,11 @@
 			name = Extra;
 			sourceTree = "<group>";
 		};
->>>>>>> master
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+
+
+
+
+
 		7DFC7C0FD61A5736350D6801 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,53 +207,47 @@
 		AAC075FF1C18C94300FFCD71 /* GetWell */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				5D5878A61C21176B00B36E92 /* StepsList */,
 				5D5878A51C21170D00B36E92 /* Classes */,
 				5D5878A41C2116C800B36E92 /* ViewControllers */,
 				5D5878A31C2116A100B36E92 /* Img */,
-=======
+
 				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
 				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AA36F4271C1F28FF00CA21F6 /* Songs.swift */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
+
 				AAF556561C2077A6009BC1B7 /* Timers.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+
+
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
-=======
-<<<<<<< HEAD
+
+
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
-=======
+
 				AAF556561C2077A6009BC1B7 /* Timers.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
->>>>>>> master
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
+
+
+
+
 				AAF556561C2077A6009BC1B7 /* Timers.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
->>>>>>> master
-<<<<<<< HEAD
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
+
+
+
 				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
 				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
->>>>>>> master
+
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
 				4C5D1A161C1F40E0003C5294 /* Parse */,
@@ -287,6 +265,13 @@
 		AAC076201C19E5B800FFCD71 /* ImageSets */ = {
 			isa = PBXGroup;
 			children = (
+				5D5878B51C21A96E00B36E92 /* GetWellLogin2a.png */,
+				5D5878B61C21A96E00B36E92 /* GetWellMainPage.png */,
+				5D5878B71C21A96E00B36E92 /* GetWellSignUp2.png */,
+				5D5878B81C21A96E00B36E92 /* GetWellSignUp2a.png */,
+				5D5878B91C21A96E00B36E92 /* GetWellSignUp3.png */,
+				5D5878BA1C21A96E00B36E92 /* GetWellSignUp22a.png */,
+				5D5878BB1C21A96E00B36E92 /* GetWellSignUpFinal.png */,
 				AAC0760A1C18C94300FFCD71 /* Assets.xcassets */,
 			);
 			name = ImageSets;
@@ -384,28 +369,27 @@
 			files = (
 				AAC076301C19E5F700FFCD71 /* bensound-enigmatic.mp3 in Resources */,
 				AAC0762F1C19E5F700FFCD71 /* bensound-deepblue.mp3 in Resources */,
-				5D58788A1C1F6E1800B36E92 /* GetWellLogin2a.png in Resources */,
+				5D5878BC1C21A96E00B36E92 /* GetWellLogin2a.png in Resources */,
 				AAC076371C19E5F700FFCD71 /* bensound-tomorrow.mp3 in Resources */,
 				AAC076351C19E5F700FFCD71 /* bensound-sadday.mp3 in Resources */,
-				5D5878961C1F924A00B36E92 /* GetWellMainPage.png in Resources */,
-				5D5878941C1F8C8E00B36E92 /* GetWellSignUpFinal.png in Resources */,
-				5D58788C1C1F7EF100B36E92 /* GetWellSignUp2.png in Resources */,
 				AAC0760E1C18C94300FFCD71 /* LaunchScreen.storyboard in Resources */,
 				AAC0762E1C19E5F700FFCD71 /* bensound-betterdays.mp3 in Resources */,
+				5D5878BF1C21A96E00B36E92 /* GetWellSignUp2a.png in Resources */,
 				AAC076331C19E5F700FFCD71 /* bensound-november.mp3 in Resources */,
 				AAC0761F1C19DCA100FFCD71 /* Simple_Meditation_Step.docx in Resources */,
-				5D5878901C1F844400B36E92 /* GetWellSignUp3.png in Resources */,
+				5D5878C11C21A96E00B36E92 /* GetWellSignUp22a.png in Resources */,
+				5D5878C01C21A96E00B36E92 /* GetWellSignUp3.png in Resources */,
 				4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */,
 				AAC0760B1C18C94300FFCD71 /* Assets.xcassets in Resources */,
-				5D5878981C1F9A2000B36E92 /* gwArrow.png in Resources */,
 				AAC076311C19E5F700FFCD71 /* bensound-india.mp3 in Resources */,
+				5D5878C21C21A96E00B36E92 /* GetWellSignUpFinal.png in Resources */,
 				AAC076361C19E5F700FFCD71 /* bensound-slowmotion.mp3 in Resources */,
 				AAC076341C19E5F700FFCD71 /* bensound-relaxing.mp3 in Resources */,
 				AAC076321C19E5F700FFCD71 /* bensound-newdawn.mp3 in Resources */,
 				AAC0762D1C19E5F700FFCD71 /* bensound-acousticbreeze.mp3 in Resources */,
-				5D58788E1C1F82B100B36E92 /* GetWellSignUp2a.png in Resources */,
+				5D5878BD1C21A96E00B36E92 /* GetWellMainPage.png in Resources */,
 				AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */,
-				5D5878921C1F8BB500B36E92 /* GetWellSignUp22a.png in Resources */,
+				5D5878BE1C21A96E00B36E92 /* GetWellSignUp2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,16 +623,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5D58789E1C2113E600B36E92 /* Steps_list.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5D58789F1C2113E600B36E92 /* Steps_list.xcdatamodel */,
-			);
-			currentVersion = 5D58789F1C2113E600B36E92 /* Steps_list.xcdatamodel */;
-			path = Steps_list.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		AAC076071C18C94300FFCD71 /* GetWell.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

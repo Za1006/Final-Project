@@ -23,21 +23,7 @@ import UIKit
 
 class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate,MediaPlayerViewDelegate, StepsListViewDelegate
 {
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     @IBOutlet weak var tableView: UITableView!
-=======
-<<<<<<< HEAD
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-=======
->>>>>>> parent of 0c8edf9... Revert "Merge branch 'master' into keronGetWell"
-    
-=======
->>>>>>> master
     var delegate: MediaPlayerViewController?
 
     var originalCount = 120
