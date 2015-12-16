@@ -12,7 +12,6 @@ import AVFoundation
 
 <<<<<<< HEAD
 
-
 class MediaPlayerViewController: UIViewController
 {
    
@@ -34,8 +33,8 @@ class MediaPlayerViewController: UIViewController
     var nowPlaying: Bool = false
     
     var timer: NSTimer?
-    var timers = Array<Timer>()
-    var currentTimerSet: Timer?
+
+
 
     var delegate: MediaPlayerViewDelegate?
     
@@ -65,6 +64,10 @@ class MediaPlayerViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
+        func timerWasChosen(timerCount: Int)
+        {
+//            originalCount = timerCount
+        }
     
 <<<<<<< HEAD
 
