@@ -50,33 +50,21 @@ class MainController: UIViewController
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
-            setNotification()
         }
         else if sender.selectedSegmentIndex == 1
         {
             stopTimer()
-            originalCount = 600
+            originalCount = 5
             countLabel.text = "10:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
-            setNotification()
         }
     }
     
     @IBAction func buttonTapped(sender: UIButton!)
     {
         playNotification()
-    }
-    
-    func setNotification()
-    {
-        if originalCount == 0
-        {
-            avQueuePlayer.pause()
-            playNotification()
-            avQueuePlayer.play()
-        }
     }
     
     func playNotification()
@@ -109,6 +97,7 @@ class MainController: UIViewController
         if originalCount == 0
         {
             stopTimer()
+            playNotification()
         }
     }
     
@@ -143,7 +132,6 @@ class MainController: UIViewController
     {
         let acoustic = Song(title: "Happiness", artist: "Benjamin Tissot", filename: "happiness", albumArtwork: "Acoustic")
         songs.append(acoustic)
-        currentSong = acoustic
         
         let betterdays = Song(title: "BetterDays", artist: "Ben", filename: "bensound-betterdays", albumArtwork: "Ben")
         songs.append(betterdays)
@@ -171,6 +159,24 @@ class MainController: UIViewController
         {
             avQueuePlayer.pause()
         }
+    }
+    
+    @IBAction func skipForwardTapped(sender: UIButton)
+    {
+        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
+        let nextSong: Int
+        
+        if currentSongIndex + 1 >= songs.count
+        {
+            nextSong = 0
+        }
+        else
+        {
+            nextSong = currentSongIndex + 1
+        }
+        currentSong = songs[nextSong]
+        loadCurrentSong()
+        togglePlayback(true)
     }
     
     

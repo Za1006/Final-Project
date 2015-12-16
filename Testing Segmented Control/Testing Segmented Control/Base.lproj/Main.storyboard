@@ -27,24 +27,33 @@
                                     <action selector="changedSortedCriteria:" destination="BYZ-38-t0r" eventType="valueChanged" id="vhE-LT-CGP"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vld-KS-dgq">
-                                <rect key="frame" x="279" y="384" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vld-KS-dgq">
+                                <rect key="frame" x="278" y="384" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmG-50-SME">
-                                <rect key="frame" x="277" y="439" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="244" y="439" width="112" height="30"/>
+                                <state key="normal" title="Play Notification"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x6F-NX-yEo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDl-Ex-P6G">
+                                <rect key="frame" x="285" y="335" width="30" height="30"/>
+                                <state key="normal" title="skip"/>
+                                <connections>
+                                    <action selector="skipForwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqh-LJ-7DC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vld-KS-dgq" firstAttribute="top" secondItem="nCu-Og-gUa" secondAttribute="bottom" constant="70" id="2UY-Te-GkY"/>
+                            <constraint firstItem="NDl-Ex-P6G" firstAttribute="top" secondItem="nCu-Og-gUa" secondAttribute="bottom" constant="21" id="3vn-rw-LsT"/>
                             <constraint firstItem="nCu-Og-gUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rqa-Zh-bZg"/>
+                            <constraint firstItem="NDl-Ex-P6G" firstAttribute="centerX" secondItem="nCu-Og-gUa" secondAttribute="centerX" id="Xje-bd-07D"/>
                             <constraint firstItem="nCu-Og-gUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xz5-Sw-d7l"/>
                             <constraint firstItem="wmG-50-SME" firstAttribute="top" secondItem="vld-KS-dgq" secondAttribute="bottom" constant="34" id="lSx-VC-qwf"/>
                             <constraint firstItem="vld-KS-dgq" firstAttribute="centerX" secondItem="nCu-Og-gUa" secondAttribute="centerX" id="nSX-kc-bbj"/>

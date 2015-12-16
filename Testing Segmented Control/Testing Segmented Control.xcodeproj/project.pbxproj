@@ -40,9 +40,9 @@
 		4CA20B5A1C207E6B00DA57DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA20B601C207FED00DA57DA /* Timers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
 		4CA20B671C20A44200DA57DA /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happiness.mp3; sourceTree = "<group>"; };
-		4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sessionOver.m4a; sourceTree = "<group>"; };
-		4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sessionOver.wav; sourceTree = "<group>"; };
+		4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = happiness.mp3; path = ../happiness.mp3; sourceTree = "<group>"; };
+		4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = sessionOver.m4a; path = ../sessionOver.m4a; sourceTree = "<group>"; };
+		4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = sessionOver.wav; path = ../sessionOver.wav; sourceTree = "<group>"; };
 		4CA20BA11C21E88F00DA57DA /* bensound-acousticbreeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-acousticbreeze.mp3"; sourceTree = "<group>"; };
 		4CA20BA21C21E88F00DA57DA /* bensound-betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-betterdays.mp3"; sourceTree = "<group>"; };
 		4CA20BA31C21E88F00DA57DA /* bensound-deepblue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-deepblue.mp3"; sourceTree = "<group>"; };
@@ -90,9 +90,6 @@
 				4CA20B671C20A44200DA57DA /* Song.swift */,
 				4CA20B501C207E6B00DA57DA /* Test.swift */,
 				4CA20B521C207E6B00DA57DA /* Main.storyboard */,
-				4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */,
-				4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */,
-				4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */,
 				4CA20BA01C21E88F00DA57DA /* FreeMusicFile */,
 				4CA20B621C20841B00DA57DA /* Extra */,
 			);
@@ -113,6 +110,9 @@
 		4CA20BA01C21E88F00DA57DA /* FreeMusicFile */ = {
 			isa = PBXGroup;
 			children = (
+				4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */,
+				4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */,
+				4CA20B6F1C20D0A200DA57DA /* sessionOver.wav */,
 				4CA20BA11C21E88F00DA57DA /* bensound-acousticbreeze.mp3 */,
 				4CA20BA21C21E88F00DA57DA /* bensound-betterdays.mp3 */,
 				4CA20BA31C21E88F00DA57DA /* bensound-deepblue.mp3 */,
