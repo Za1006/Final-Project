@@ -15,10 +15,13 @@ import AVFoundation
 class MediaPlayerViewController: UIViewController
 {
    
-    @IBOutlet var timeCountdown: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var playPauseButton: UIButton!
+    @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
+    @IBOutlet var timeCountdown: UILabel!
+
+
     
     let avQueuePlayer = AVQueuePlayer()
     var songs = Array<Song>()
@@ -26,10 +29,12 @@ class MediaPlayerViewController: UIViewController
     var nowPlaying: Bool = false
     
     var timer: NSTimer?
+    var index0Count = 300
+    var index1Count = 600
+    var index2Count = 900
+    var index3Count = 1200
 
-
-
-    var delegate: MediaPlayerViewDelegate?
+    var delegate: MainViewController?
   
     
     override func viewDidLoad()
@@ -44,7 +49,6 @@ class MediaPlayerViewController: UIViewController
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
-//        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
     }
 
 
@@ -64,6 +68,87 @@ class MediaPlayerViewController: UIViewController
     }
     */
     
+
+    
+    
+    @IBAction func segmentedIndexTapped(sender: UISegmentedControl)
+    {
+        
+        //        timeSegmentedControl.addTarget(self, action: "action:", forControlEvents: .TouchUpInside)
+        
+        if sender.selectedSegmentIndex == 0
+        {
+            index0Count = 300
+            //            timeCountdown.text = "5:00"
+            startTimer()
+            loadCurrentSong()
+            togglePlayback(true)
+            setNotification()
+            
+        }
+        else if sender.selectedSegmentIndex == 1
+        {
+            index1Count = 600
+            //            timeCountdown.text = "10:00"
+            startTimer()
+            loadCurrentSong()
+            togglePlayback(true)
+            setNotification()
+        }
+        else if sender.selectedSegmentIndex == 2
+        {
+            index2Count = 900
+            //            timeCountdown.text = "15:00"
+            startTimer()
+            loadCurrentSong()
+            togglePlayback(true)
+            setNotification()
+        }
+        else if sender.selectedSegmentIndex == 3
+        {
+            index3Count = 1200
+            //            timeCountdown.text = "20:00"
+            startTimer()
+            loadCurrentSong()
+            togglePlayback(true)
+            setNotification()
+        }
+        
+        
+    }
+    
+    func startTimer()
+    {
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateUI", userInfo: nil, repeats: true)
+    }
+    
+    func stopTimer()
+    {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateUI()
+    {
+        index0Count = index0Count - 1
+        let index0MinuteCount = index0Count/60
+        let index0SecondCount = index0Count%60
+        timeCountdown.text = String("\(index0MinuteCount):\(index0SecondCount)")
+        
+        
+        if index0Count == 0 && index1Count == 0 && index2Count == 0 && index3Count == 0
+        {
+            stopTimer()
+        }
+    }
+
+    func setNotification()
+    {
+        if index0Count == 0 && index1Count == 0 && index2Count == 0 && index3Count == 0
+        {
+            // beep beep
+        }
+    }
     
     @IBAction func playPauseTapped(sender: UIButton)
     {
