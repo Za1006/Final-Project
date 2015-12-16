@@ -27,8 +27,11 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     @IBOutlet weak var tableView: UITableView!
     
     var delegate: MediaPlayerViewController?
+
     var originalCount = 120
     var timer: NSTimer?
+    
+    
 
 
     @IBOutlet weak var image: UIImage!
@@ -109,6 +112,29 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
+        
+        TimeSegmentedControl.addTarget(self, action: "action:", forControlEvents: .TouchUpInside)
+
+        if sender.selectedSegmentIndex == 0
+        {
+            loadView()
+        }
+        else if sender.selectedSegmentIndex == 1
+        {
+            
+        }
+        else if sender.selectedSegmentIndex == 2
+        {
+            
+        }
+        else if sender.selectedSegmentIndex == 3
+        {
+            
+        }
+        else
+        {
+            
+        }
         
     }
     
