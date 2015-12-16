@@ -30,7 +30,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var image: UIImage!
     
-    var remainingCharacters = ["Obi-Wan Kenobi", "Leia Organa", "R2-D2", "Luke Skywalker", "Grand Moff Tarkin", "Darth Vader"]
+    var remainingCharacters = []
 
     override func viewDidLoad()
     {
@@ -103,6 +103,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
         return String(formattedTime)
     }
+    
     
     func stepsChecked(buttonTapped: Int)
     {

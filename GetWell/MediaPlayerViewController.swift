@@ -79,7 +79,7 @@ class MediaPlayerViewController: UIViewController
         if sender.selectedSegmentIndex == 0
         {
             index0Count = 300
-            //            timeCountdown.text = "5:00"
+            timeCountdown.text = "5:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
@@ -89,7 +89,7 @@ class MediaPlayerViewController: UIViewController
         else if sender.selectedSegmentIndex == 1
         {
             index1Count = 600
-            //            timeCountdown.text = "10:00"
+            timeCountdown.text = "10:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
@@ -98,7 +98,7 @@ class MediaPlayerViewController: UIViewController
         else if sender.selectedSegmentIndex == 2
         {
             index2Count = 900
-            //            timeCountdown.text = "15:00"
+            timeCountdown.text = "15:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
@@ -107,7 +107,7 @@ class MediaPlayerViewController: UIViewController
         else if sender.selectedSegmentIndex == 3
         {
             index3Count = 1200
-            //            timeCountdown.text = "20:00"
+            timeCountdown.text = "20:00"
             startTimer()
             loadCurrentSong()
             togglePlayback(true)
