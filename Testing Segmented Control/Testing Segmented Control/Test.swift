@@ -45,7 +45,7 @@ class MainController: UIViewController
         if sender.selectedSegmentIndex == 0
         {
             stopTimer()
-            originalCount = 300
+            originalCount = 10
             countLabel.text = "5:00"
             startTimer()
             loadCurrentSong()
@@ -55,7 +55,7 @@ class MainController: UIViewController
         else if sender.selectedSegmentIndex == 1
         {
             stopTimer()
-            originalCount = 600
+            originalCount = 10
             countLabel.text = "10:00"
             startTimer()
             loadCurrentSong()
@@ -64,12 +64,27 @@ class MainController: UIViewController
         }
     }
     
+    @IBAction func buttonTapped(sender: UIButton!)
+    {
+        playNotification()
+    }
+    
     func setNotification()
     {
         if originalCount == 0
         {
-            // beep beep
+            avQueuePlayer.pause()
+            playNotification()
+            avQueuePlayer.play()
         }
+    }
+    
+    func playNotification()
+    {
+        let soundURL = NSBundle.mainBundle().URLForResource("sessionOver", withExtension: "m4a")!
+        var soundID: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundURL, &soundID)
+        AudioServicesPlaySystemSound(soundID)
     }
     
     func startTimer()
@@ -153,6 +168,7 @@ class MainController: UIViewController
             avQueuePlayer.pause()
         }
     }
+    
     
 }
 

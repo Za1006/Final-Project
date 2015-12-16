@@ -33,18 +33,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmG-50-SME">
+                                <rect key="frame" x="277" y="439" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x6F-NX-yEo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vld-KS-dgq" firstAttribute="top" secondItem="nCu-Og-gUa" secondAttribute="bottom" constant="70" id="2UY-Te-GkY"/>
                             <constraint firstItem="nCu-Og-gUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rqa-Zh-bZg"/>
                             <constraint firstItem="nCu-Og-gUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xz5-Sw-d7l"/>
+                            <constraint firstItem="wmG-50-SME" firstAttribute="top" secondItem="vld-KS-dgq" secondAttribute="bottom" constant="34" id="lSx-VC-qwf"/>
                             <constraint firstItem="vld-KS-dgq" firstAttribute="centerX" secondItem="nCu-Og-gUa" secondAttribute="centerX" id="nSX-kc-bbj"/>
+                            <constraint firstItem="wmG-50-SME" firstAttribute="centerX" secondItem="vld-KS-dgq" secondAttribute="centerX" id="spu-wq-DFv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BTz-gM-Ebg"/>
                     <connections>
                         <outlet property="countLabel" destination="vld-KS-dgq" id="LZ8-iv-b5e"/>
+                        <outlet property="startStopButton" destination="wmG-50-SME" id="DzK-ZF-f5F"/>
                         <outlet property="timeSegmentedControl" destination="nCu-Og-gUa" id="Cn2-Ko-79d"/>
                     </connections>
                 </viewController>
