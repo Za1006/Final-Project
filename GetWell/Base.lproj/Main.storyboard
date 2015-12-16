@@ -228,16 +228,39 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-BP-Zl5">
+                                <rect key="frame" x="0.0" y="421" width="600" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StepsListCell" id="lXb-Ol-NSu">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lXb-Ol-NSu" id="R5u-cN-Zuu">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mtC-ec-np1" id="xp4-yH-Xns"/>
+                                    <outlet property="delegate" destination="mtC-ec-np1" id="g5m-xN-Mml"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.84313725490196079" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="fMU-BP-Zl5" firstAttribute="centerX" secondItem="A8E-Nn-O1a" secondAttribute="centerX" id="09z-VM-SLb"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="Q6i-cg-MdO" secondAttribute="trailing" constant="-62" id="1eR-Bm-fjn"/>
                             <constraint firstItem="hcg-b5-sEU" firstAttribute="leading" secondItem="Q6i-cg-MdO" secondAttribute="trailing" constant="8" id="3oS-FP-KEf"/>
                             <constraint firstItem="hcg-b5-sEU" firstAttribute="leading" secondItem="Q6i-cg-MdO" secondAttribute="trailing" constant="2" id="5d2-Of-KnT"/>
+                            <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="fMU-BP-Zl5" secondAttribute="bottom" id="7cf-S9-NsX"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="813-8G-fTa"/>
                             <constraint firstItem="A8E-Nn-O1a" firstAttribute="top" secondItem="Q6i-cg-MdO" secondAttribute="bottom" constant="1" id="9hF-5f-sYR"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-46" id="A5j-Z7-nQE"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
+                            <constraint firstItem="fMU-BP-Zl5" firstAttribute="top" secondItem="A8E-Nn-O1a" secondAttribute="bottom" constant="8" id="CCo-CA-Fx3"/>
+                            <constraint firstAttribute="trailing" secondItem="fMU-BP-Zl5" secondAttribute="trailing" id="CiV-en-Zne"/>
+                            <constraint firstItem="fMU-BP-Zl5" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="FZe-OQ-UyO"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-29" id="Gx5-gZ-PIq"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" id="HL9-rM-Rso"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" constant="15" id="KDg-1V-Fxa"/>
@@ -296,6 +319,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="TimeSegmentedControl" destination="A8E-Nn-O1a" id="Ieh-of-kHQ"/>
+                        <outlet property="tableView" destination="fMU-BP-Zl5" id="E2s-6V-OWl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-OI-QJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="1771"/>
+            <point key="canvasLocation" x="928" y="1705"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="yBa-3x-hA0">
@@ -389,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4h-qT-bdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="1021"/>
+            <point key="canvasLocation" x="1735.5" y="1003"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="802-Y1-qlY">
@@ -517,7 +541,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ba-3c-Tl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="353"/>
+            <point key="canvasLocation" x="281" y="353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GK4-eT-9q3">
@@ -536,7 +560,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSj-Aj-xQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="1021"/>
+            <point key="canvasLocation" x="273" y="1021"/>
         </scene>
     </scenes>
     <resources>

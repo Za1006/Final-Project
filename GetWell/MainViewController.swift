@@ -15,11 +15,16 @@ import UIKit
 @objc protocol MediaPlayerViewDelegate
 {
     func timerWasChosen(timerCount: Int)
-    
 }
-class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate,MediaPlayerViewDelegate
+@objc protocol StepsListViewDelegate
+{
+    func stepsChecked(buttonTapped: Int)
+}
+
+class MainViewController: UIViewController, UIPopoverPresentationControllerDelegate, DatePickerDelegate,MediaPlayerViewDelegate, StepsListViewDelegate
 {
     
+    @IBOutlet weak var tableView: UITableView!
     
     var delegate: MediaPlayerViewController?
     var originalCount = 120
@@ -86,6 +91,11 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     }
     
 
+    func stepsChecked(buttonTapped: Int)
+    {
+    
+    }
+    
     
     func dateFormat(x: NSDate) -> String
     {
@@ -102,6 +112,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         
     }
     
-
+    // MARK: Steps_Check_List (TableView)
+    
+    
     
 }
