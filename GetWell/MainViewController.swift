@@ -22,15 +22,20 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     
     var delegate: MediaPlayerViewController?
 
-    var originalCount = 120
+    var index0Count = 300
+    var index1Count = 600
+    var index2Count = 900
+    var index3Count = 1200
     var timer: NSTimer?
+    var timers = Array<Timer>()
+//    var currentTimerSet: Timer?
     
     
 
     @IBOutlet weak var nextMeditation: UILabel!
     @IBOutlet weak var image: UIImage!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var TimeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
 
     override func viewDidLoad()
     {
@@ -38,7 +43,12 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+//        delegate?.timerWasChosen(String-timeSegmentedControl.selectedSegmentIndex(0))
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -75,7 +85,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
 //    Timer chosen from Segmented (5, 10, 15, 20)
     func timerWasChosen(timerCount: Int)
     {
-        originalCount = timerCount
+//        originalCount = timerCount
     }
     
     // MARK: DatePicker Delegate
@@ -108,29 +118,68 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     @IBAction func changeSortCriteria(sender: UISegmentedControl)
     {
         
-        TimeSegmentedControl.addTarget(self, action: "action:", forControlEvents: .TouchUpInside)
-
         if sender.selectedSegmentIndex == 0
         {
-            loadView()
+            index0Count = 300
+            startTimer()
         }
         else if sender.selectedSegmentIndex == 1
         {
-            
+            index1Count = 600
+            startTimer()
         }
         else if sender.selectedSegmentIndex == 2
         {
-            
-        }
-        else if sender.selectedSegmentIndex == 3
-        {
-            
+            index2Count = 900
+            startTimer()
         }
         else
         {
-            
+           if sender.selectedSegmentIndex == 3
+           {
+            index3Count = 1200
+            startTimer()
+            }
         }
-        
+       self.reloadInputViews()
     }
     
+        func startTimer()
+        {
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateUI", userInfo: nil, repeats: true)
+        }
+
+            func stopTimer()
+            {
+                timer?.invalidate()
+                timer = nil
+            }
+//    func updateUI()
+//    {
+//        index0Count = index0Count - 1
+//        let fiveMinuteCount = index0Count/60
+//        let fiveSecondCount = index0Count%60
+//        index1Count = index1Count - 1
+//        let tenMinuteCount = index1Count/60
+//        let tenSecondCount = index1Count%60
+//        index2Count = index2Count - 1
+//        let fifteenMinuteCount = index2Count/60
+//        let fifteenSecondCount = index2Count%60
+//        index3Count = index3Count - 1
+//        let twentyMinuteCount = index3Count/60
+//        let twentySecondCount = index3Count%60
+//        
+//        countLabel.text = String("\(newMinuteCount):\(newSecondCount)")
+//        
+//        if originalCount == 0
+//        {
+//            stopTimer()
+//        }
+//    }
+//    
+
 }
+
+    
+
+
