@@ -193,7 +193,7 @@
                                     <segue destination="4t6-Ik-EYg" kind="show" identifier="ShowCountdownSegue" id="SMi-Mv-0hv"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Start the Journey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6i-cg-MdO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start the Journey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6i-cg-MdO">
                                 <rect key="frame" x="21" y="353" width="142" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="GK7-pr-H9g"/>
@@ -213,7 +213,7 @@
                                 <color key="textColor" red="0.96439627314430454" green="1" blue="0.02964774528058689" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="gwArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-b5-sEU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gwArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-b5-sEU">
                                 <rect key="frame" x="165" y="357" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="1uO-UX-idI"/>
@@ -260,6 +260,7 @@
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
                             <constraint firstItem="fMU-BP-Zl5" firstAttribute="top" secondItem="A8E-Nn-O1a" secondAttribute="bottom" constant="8" id="CCo-CA-Fx3"/>
                             <constraint firstAttribute="trailing" secondItem="fMU-BP-Zl5" secondAttribute="trailing" id="CiV-en-Zne"/>
+                            <constraint firstItem="A8E-Nn-O1a" firstAttribute="top" secondItem="hcg-b5-sEU" secondAttribute="bottom" constant="6" id="Dsd-xK-fk4"/>
                             <constraint firstItem="fMU-BP-Zl5" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="FZe-OQ-UyO"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-29" id="Gx5-gZ-PIq"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" id="HL9-rM-Rso"/>
@@ -284,6 +285,7 @@
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="noI-iS-aFG"/>
                             <constraint firstAttribute="trailing" secondItem="A8E-Nn-O1a" secondAttribute="trailing" id="q7n-rW-ssm"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="20" id="qLc-EE-Zcj"/>
+                            <constraint firstItem="Q6i-cg-MdO" firstAttribute="bottom" secondItem="llJ-GZ-HaR" secondAttribute="bottom" id="wA6-On-Gao"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -360,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PlM-OI-QJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="1705"/>
+            <point key="canvasLocation" x="928" y="1782"/>
         </scene>
         <!--Set Reminder Pop Over View Controller-->
         <scene sceneID="yBa-3x-hA0">
