@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Entity+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
-      location = "group:Entity.swift">
-   </FileRef>
-   <FileRef
       location = "group:GetWell.xcodeproj">
    </FileRef>
    <FileRef

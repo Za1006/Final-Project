@@ -1,18 +1,17 @@
 //
-//  StepListCell.swift
+//  TodoCell.swift
 //  GetWell
 //
-//  Created by Keron Williams on 12/16/15.
+//  Created by Keron Williams on 12/17/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
 
 import UIKit
 
-class StepListCell: UITableViewCell
-{
-    @IBOutlet weak var stepsLabel: UILabel!
-    @IBOutlet weak var checkBox: UIButton!
-
+class TodoCell: UITableViewCell {
+    
+    @IBOutlet weak var todoLabel: UILabel!
+    @IBOutlet weak var checkbox: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

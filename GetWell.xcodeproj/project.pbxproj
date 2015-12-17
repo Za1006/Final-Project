@@ -10,8 +10,6 @@
 		39FAFD2AF6D7F9A0E7731F83 /* libPods-GetWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75C5F9F12D7377264A999C /* libPods-GetWell.a */; };
 		4C0700881C1A39630092688C /* SetReminderPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */; };
 		4C07008A1C1A39EB0092688C /* hypnosis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0700891C1A39EB0092688C /* hypnosis.jpg */; };
-		5D0C58071C21D1AC00A1865B /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C58061C21D1AC00A1865B /* Steps.swift */; };
-		5D0C58091C21D4F700A1865B /* StepListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C58081C21D4F700A1865B /* StepListCell.swift */; };
 		5D0C580C1C21DB6C00A1865B /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0C580A1C21DB6C00A1865B /* checked.png */; };
 		5D0C580D1C21DB6C00A1865B /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0C580B1C21DB6C00A1865B /* unchecked.png */; };
 		5D50E1D41C21BDFC00894E3A /* gwArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D50E1D31C21BDFC00894E3A /* gwArrow.png */; };
@@ -22,11 +20,10 @@
 		5D5878C01C21A96E00B36E92 /* GetWellSignUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878B91C21A96E00B36E92 /* GetWellSignUp3.png */; };
 		5D5878C11C21A96E00B36E92 /* GetWellSignUp22a.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878BA1C21A96E00B36E92 /* GetWellSignUp22a.png */; };
 		5D5878C21C21A96E00B36E92 /* GetWellSignUpFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D5878BB1C21A96E00B36E92 /* GetWellSignUpFinal.png */; };
-		5DCF68731C21F61F00A72F12 /* Steps+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68721C21F61F00A72F12 /* Steps+CoreDataProperties.swift */; };
-		5DCF68961C22246300A72F12 /* NewMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68951C22246300A72F12 /* NewMainViewController.swift */; };
-		5DCF68991C22271400A72F12 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68971C22271400A72F12 /* Entity+CoreDataProperties.swift */; };
-		5DCF689A1C22271400A72F12 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68981C22271400A72F12 /* Entity.swift */; };
-		AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */; };
+		5DCF689C1C22FC6700A72F12 /* Todo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF689B1C22FC6700A72F12 /* Todo+CoreDataProperties.swift */; };
+		5DCF689E1C22FC9900A72F12 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF689D1C22FC9900A72F12 /* Todo.swift */; };
+		5DCF68A21C2301AA00A72F12 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68A11C2301AA00A72F12 /* TodoCell.swift */; };
+		5DCF68A41C231AE700A72F12 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF68A31C231AE700A72F12 /* MediaPlayerViewController.swift */; };
 		AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36F4271C1F28FF00CA21F6 /* Songs.swift */; };
 		AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC076001C18C94300FFCD71 /* AppDelegate.swift */; };
 		AAC076061C18C94300FFCD71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC076041C18C94300FFCD71 /* Main.storyboard */; };
@@ -54,8 +51,6 @@
 /* Begin PBXFileReference section */
 		4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetReminderPopOverViewController.swift; sourceTree = "<group>"; };
 		4C0700891C1A39EB0092688C /* hypnosis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hypnosis.jpg; sourceTree = "<group>"; };
-		5D0C58061C21D1AC00A1865B /* Steps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
-		5D0C58081C21D4F700A1865B /* StepListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepListCell.swift; sourceTree = "<group>"; };
 		5D0C580A1C21DB6C00A1865B /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
 		5D0C580B1C21DB6C00A1865B /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
 		5D50E1D31C21BDFC00894E3A /* gwArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gwArrow.png; sourceTree = "<group>"; };
@@ -66,13 +61,12 @@
 		5D5878B91C21A96E00B36E92 /* GetWellSignUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp3.png; sourceTree = "<group>"; };
 		5D5878BA1C21A96E00B36E92 /* GetWellSignUp22a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUp22a.png; sourceTree = "<group>"; };
 		5D5878BB1C21A96E00B36E92 /* GetWellSignUpFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GetWellSignUpFinal.png; sourceTree = "<group>"; };
-		5DCF68721C21F61F00A72F12 /* Steps+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		5DCF68951C22246300A72F12 /* NewMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMainViewController.swift; sourceTree = "<group>"; };
-		5DCF68971C22271400A72F12 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		5DCF68981C22271400A72F12 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		5DCF689B1C22FC6700A72F12 /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5DCF689D1C22FC9900A72F12 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		5DCF68A11C2301AA00A72F12 /* TodoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		5DCF68A31C231AE700A72F12 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		9F75C5F9F12D7377264A999C /* libPods-GetWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AFF69E351F6DB51907DE2 /* Pods-GetWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.debug.xcconfig"; sourceTree = "<group>"; };
-		AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		AA36F4271C1F28FF00CA21F6 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		AAC075FD1C18C94300FFCD71 /* GetWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC076001C18C94300FFCD71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,21 +154,18 @@
 		AAC075FF1C18C94300FFCD71 /* GetWell */ = {
 			isa = PBXGroup;
 			children = (
-				5DCF68971C22271400A72F12 /* Entity+CoreDataProperties.swift */,
-				5DCF68981C22271400A72F12 /* Entity.swift */,
 				AAC076001C18C94300FFCD71 /* AppDelegate.swift */,
 				AAC076171C18CCA400FFCD71 /* GetWell-Bridging-Header.h */,
 				AA36F4271C1F28FF00CA21F6 /* Songs.swift */,
+				5DCF68A31C231AE700A72F12 /* MediaPlayerViewController.swift */,
 				AAF556561C2077A6009BC1B7 /* Timers.swift */,
 				AAC0761A1C19104D00FFCD71 /* RegisterViewController.swift */,
 				AAC076181C190D4D00FFCD71 /* LoginViewController.swift */,
-				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
 				4C0700871C1A39630092688C /* SetReminderPopOverViewController.swift */,
-				AA36F4241C1F285A00CA21F6 /* MediaPlayerViewController.swift */,
-				5D0C58061C21D1AC00A1865B /* Steps.swift */,
-				5D0C58081C21D4F700A1865B /* StepListCell.swift */,
-				5DCF68721C21F61F00A72F12 /* Steps+CoreDataProperties.swift */,
-				5DCF68951C22246300A72F12 /* NewMainViewController.swift */,
+				AAC0761C1C19D21600FFCD71 /* MainViewController.swift */,
+				5DCF689B1C22FC6700A72F12 /* Todo+CoreDataProperties.swift */,
+				5DCF689D1C22FC9900A72F12 /* Todo.swift */,
+				5DCF68A11C2301AA00A72F12 /* TodoCell.swift */,
 				AAC076041C18C94300FFCD71 /* Main.storyboard */,
 				AAC0760C1C18C94300FFCD71 /* LaunchScreen.storyboard */,
 				4C5D1A161C1F40E0003C5294 /* Parse */,
@@ -378,20 +369,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC076191C190D4D00FFCD71 /* LoginViewController.swift in Sources */,
-				5D0C58071C21D1AC00A1865B /* Steps.swift in Sources */,
 				4C0700881C1A39630092688C /* SetReminderPopOverViewController.swift in Sources */,
-				5DCF68731C21F61F00A72F12 /* Steps+CoreDataProperties.swift in Sources */,
 				AAC0761B1C19104D00FFCD71 /* RegisterViewController.swift in Sources */,
 				AAC076091C18C94300FFCD71 /* GetWell.xcdatamodeld in Sources */,
-				5D0C58091C21D4F700A1865B /* StepListCell.swift in Sources */,
 				AAC076011C18C94300FFCD71 /* AppDelegate.swift in Sources */,
-				5DCF68961C22246300A72F12 /* NewMainViewController.swift in Sources */,
 				AA36F4281C1F28FF00CA21F6 /* Songs.swift in Sources */,
-				5DCF68991C22271400A72F12 /* Entity+CoreDataProperties.swift in Sources */,
-				5DCF689A1C22271400A72F12 /* Entity.swift in Sources */,
-				AA36F4251C1F285A00CA21F6 /* MediaPlayerViewController.swift in Sources */,
 				AAF556571C2077A6009BC1B7 /* Timers.swift in Sources */,
+				5DCF68A21C2301AA00A72F12 /* TodoCell.swift in Sources */,
 				AAC0761D1C19D21600FFCD71 /* MainViewController.swift in Sources */,
+				5DCF689C1C22FC6700A72F12 /* Todo+CoreDataProperties.swift in Sources */,
+				5DCF68A41C231AE700A72F12 /* MediaPlayerViewController.swift in Sources */,
+				5DCF689E1C22FC9900A72F12 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

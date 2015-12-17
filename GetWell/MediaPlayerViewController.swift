@@ -11,11 +11,10 @@ import MediaPlayer
 import AVFoundation
 
 
-
 class MediaPlayerViewController: UIViewController
 {
    
-    @IBOutlet var timeSelected: UILabel!
+    
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var songTitleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
@@ -31,6 +30,7 @@ class MediaPlayerViewController: UIViewController
 
 
     var delegate: MainViewController?
+    
   
     
     override func viewDidLoad()
@@ -48,18 +48,16 @@ class MediaPlayerViewController: UIViewController
 //        delegate?.timerWasChosen(120-picker.selectedRowInComponent(0))
     }
 
-
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
     
-//        func timerWasChosen(timerCount: Int)
-//        {
-////            originalCount = timerCount
-//        }
-//    
-
+        func timerWasChosen(timerCount: Int)
+        {
+//            originalCount = timerCount
+        }
+    
     /*
     // MARK: - Navigation
 
@@ -69,7 +67,6 @@ class MediaPlayerViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
-    
     
     @IBAction func playPauseTapped(sender: UIButton)
     {
