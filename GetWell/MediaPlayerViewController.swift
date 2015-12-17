@@ -19,7 +19,7 @@ class MediaPlayerViewController: UIViewController
 //    @IBOutlet var artistLabel: UILabel!
 //    @IBOutlet var playPauseButton: UIButton!
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
-    @IBOutlet var timeCountdown: UILabel!
+    @IBOutlet var meditationCountdown: UILabel!
 
 
     
@@ -76,7 +76,7 @@ class MediaPlayerViewController: UIViewController
         {
             startTimer()
             originalCount = 300
-            timeCountdown.text = "5:00"
+            meditationCountdown.text = "5:00"
             setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
@@ -86,7 +86,7 @@ class MediaPlayerViewController: UIViewController
         {
             startTimer()
             originalCount = 600
-            timeCountdown.text = "10:00"
+            meditationCountdown.text = "10:00"
             setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
@@ -95,7 +95,7 @@ class MediaPlayerViewController: UIViewController
         {
             startTimer()
             originalCount = 900
-            timeCountdown.text = "15:00"
+            meditationCountdown.text = "15:00"
             setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
@@ -104,7 +104,7 @@ class MediaPlayerViewController: UIViewController
         {
             startTimer()
             originalCount = 1200
-            timeCountdown.text = "20:00"
+            meditationCountdown.text = "20:00"
             setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
@@ -130,7 +130,7 @@ class MediaPlayerViewController: UIViewController
         originalCount = originalCount - 1
         let newMinuteCount = originalCount/60
         let newSecondCount = originalCount%60
-        timeCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
+        meditationCountdown.text = String("\(newMinuteCount):\(newSecondCount)")
         
         
         if originalCount == 0
@@ -158,33 +158,33 @@ class MediaPlayerViewController: UIViewController
         togglePlayback(!nowPlaying)
     }
     
-//    @IBAction func skipForwardTapped(sender: UIButton)
-//    {
-//        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
-//        let nextSong: Int
-//        
-//        if currentSongIndex + 1 >= songs.count
-//        {
-//            nextSong = 0
-//        }
-//        else
-//        {
-//            nextSong = currentSongIndex + 1
-//        }
-//        currentSong = songs[nextSong]
-//        loadCurrentSong()
-//        togglePlayback(true)
-//    }
+    @IBAction func skipForwardTapped(sender: UIButton)
+    {
+        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
+        let nextSong: Int
+        
+        if currentSongIndex + 1 >= songs.count
+        {
+            nextSong = 0
+        }
+        else
+        {
+            nextSong = currentSongIndex + 1
+        }
+        currentSong = songs[nextSong]
+        loadCurrentSong()
+        togglePlayback(true)
+    }
     
-//    @IBAction func skipBackTapped(sender: UIButton)
-//    {
-//        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-//        if !nowPlaying
-//        {
-//            togglePlayback(true)
-//        }
-//    }
-//    
+    @IBAction func skipBackTapped(sender: UIButton)
+    {
+        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
+        if !nowPlaying
+        {
+            togglePlayback(true)
+        }
+    }
+    
     func configurePlaylist()
     {
         let acoustic = Song(title: "Acoustic Breeze", artist: "Benjamin Tissot", filename: "acousticbreeze")

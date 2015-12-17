@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    {
 //        let navController = window?.rootViewController as! UINavigationController
 //        let loginVC = navController.viewControllers[0] as! LoginViewController
-//        loginVC.loginData()
+//        loginVC.viewDidLoad()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
