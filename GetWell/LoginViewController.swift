@@ -27,9 +27,8 @@ class LoginViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-
     
-    func userCanSignIn() -> Bool
+        func userCanSignIn() -> Bool
     {
         if usernameTextField.text != "" && passwordTextField.text != ""
         {
@@ -50,6 +49,7 @@ class LoginViewController: UIViewController
                 {
                     print("login successful")
                     self.performSegueWithIdentifier("GetWellViewController", sender: self)
+                        self.dismissViewControllerAnimated(true, completion: nil)
                 }
                 else
                 {

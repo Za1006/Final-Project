@@ -15,9 +15,9 @@ import AVFoundation
 class MediaPlayerViewController: UIViewController
 {
    
-    @IBOutlet var songTitleLabel: UILabel!
-    @IBOutlet var artistLabel: UILabel!
-    @IBOutlet var playPauseButton: UIButton!
+//    @IBOutlet var songTitleLabel: UILabel!
+//    @IBOutlet var artistLabel: UILabel!
+//    @IBOutlet var playPauseButton: UIButton!
     @IBOutlet weak var timeSegmentedControl: UISegmentedControl!
     @IBOutlet var timeCountdown: UILabel!
 
@@ -30,6 +30,8 @@ class MediaPlayerViewController: UIViewController
     
     var timer: NSTimer?
     var originalCount = 300
+//    var shuffleMode: MPMusicShuffleMode
+
     
 
     var delegate: MainViewController?
@@ -67,38 +69,43 @@ class MediaPlayerViewController: UIViewController
     @IBAction func segmentedIndexTapped(sender: UISegmentedControl)
     {
         
-        //        timeSegmentedControl.addTarget(self, action: "action:", forControlEvents: .TouchUpInside)
+//        var shuffleMode: MPMusicShuffleMode
+
         
         if sender.selectedSegmentIndex == 0
         {
+            startTimer()
             originalCount = 300
             timeCountdown.text = "5:00"
-            startTimer()
+            setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
             
         }
         else if sender.selectedSegmentIndex == 1
         {
+            startTimer()
             originalCount = 600
             timeCountdown.text = "10:00"
-            startTimer()
+            setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
         }
         else if sender.selectedSegmentIndex == 2
         {
+            startTimer()
             originalCount = 900
             timeCountdown.text = "15:00"
-            startTimer()
+            setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
         }
         else if sender.selectedSegmentIndex == 3
         {
+            startTimer()
             originalCount = 1200
             timeCountdown.text = "20:00"
-            startTimer()
+            setupAudioSession()
             loadCurrentSong()
             togglePlayback(true)
         }
@@ -151,33 +158,33 @@ class MediaPlayerViewController: UIViewController
         togglePlayback(!nowPlaying)
     }
     
-    @IBAction func skipForwardTapped(sender: UIButton)
-    {
-        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
-        let nextSong: Int
-        
-        if currentSongIndex + 1 >= songs.count
-        {
-            nextSong = 0
-        }
-        else
-        {
-            nextSong = currentSongIndex + 1
-        }
-        currentSong = songs[nextSong]
-        loadCurrentSong()
-        togglePlayback(true)
-    }
+//    @IBAction func skipForwardTapped(sender: UIButton)
+//    {
+//        let currentSongIndex = (songs as NSArray).indexOfObject(currentSong!)
+//        let nextSong: Int
+//        
+//        if currentSongIndex + 1 >= songs.count
+//        {
+//            nextSong = 0
+//        }
+//        else
+//        {
+//            nextSong = currentSongIndex + 1
+//        }
+//        currentSong = songs[nextSong]
+//        loadCurrentSong()
+//        togglePlayback(true)
+//    }
     
-    @IBAction func skipBackTapped(sender: UIButton)
-    {
-        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
-        if !nowPlaying
-        {
-            togglePlayback(true)
-        }
-    }
-    
+//    @IBAction func skipBackTapped(sender: UIButton)
+//    {
+//        avQueuePlayer.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
+//        if !nowPlaying
+//        {
+//            togglePlayback(true)
+//        }
+//    }
+//    
     func configurePlaylist()
     {
         let acoustic = Song(title: "Acoustic Breeze", artist: "Benjamin Tissot", filename: "acousticbreeze")
@@ -220,8 +227,8 @@ class MediaPlayerViewController: UIViewController
         {
             song.playerItem.seekToTime(CMTimeMakeWithSeconds(0.0, 1))
             avQueuePlayer.insertItem(song.playerItem, afterItem: nil)
-                        songTitleLabel.text = song.title
-                        artistLabel.text = song.artist
+//                        songTitleLabel.text? = song.title
+//                        artistLabel.text? = song.artist
         }
     }
     
@@ -251,12 +258,12 @@ class MediaPlayerViewController: UIViewController
         nowPlaying = play
         if play
         {
-            playPauseButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+//            playPauseButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
             avQueuePlayer.play()
         }
         else
         {
-            playPauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
+//            playPauseButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
             avQueuePlayer.pause()
         }
     }

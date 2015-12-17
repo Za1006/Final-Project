@@ -260,14 +260,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeCountdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31L-t4-fJw">
-                                <rect key="frame" x="183" y="511" width="234" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A8E-Nn-O1a">
-                                <rect key="frame" x="0.0" y="451" width="600" height="29"/>
+                                <rect key="frame" x="0.0" y="224" width="600" height="29"/>
                                 <segments>
                                     <segment title="5 Minutes"/>
                                     <segment title="10 Minutes"/>
@@ -276,19 +270,26 @@
                                 </segments>
                                 <color key="tintColor" red="0.31848025321960449" green="0.4196089506149292" blue="0.64678847789764404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
+                                    <action selector="segmentedIndexTapped:" destination="4t6-Ik-EYg" eventType="valueChanged" id="dgY-GP-66O"/>
                                     <action selector="segmentedIndexTapped:" destination="4t6-Ik-EYg" eventType="touchUpInside" id="mmq-F4-FBB"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeCountdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31L-t4-fJw">
+                                <rect key="frame" x="89" y="260" width="422" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="31L-t4-fJw" secondAttribute="trailing" constant="183" id="4IW-UW-yS1"/>
-                            <constraint firstItem="31L-t4-fJw" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="183" id="6P2-a8-67l"/>
+                            <constraint firstAttribute="trailing" secondItem="31L-t4-fJw" secondAttribute="trailing" constant="89" id="4IW-UW-yS1"/>
+                            <constraint firstItem="31L-t4-fJw" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" constant="89" id="6P2-a8-67l"/>
                             <constraint firstAttribute="trailing" secondItem="A8E-Nn-O1a" secondAttribute="trailing" id="BHz-lo-zfE"/>
                             <constraint firstItem="31L-t4-fJw" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="Ojo-6n-tlz"/>
-                            <constraint firstItem="31L-t4-fJw" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="491" id="R2K-gQ-j38"/>
-                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="31L-t4-fJw" secondAttribute="bottom" constant="68" id="St1-pJ-D0H"/>
-                            <constraint firstItem="31L-t4-fJw" firstAttribute="top" secondItem="A8E-Nn-O1a" secondAttribute="bottom" constant="32" id="VqY-aK-Nau"/>
+                            <constraint firstItem="31L-t4-fJw" firstAttribute="top" secondItem="Dqn-Fj-VxH" secondAttribute="bottom" constant="196" id="R2K-gQ-j38"/>
+                            <constraint firstItem="TMn-vz-Q0u" firstAttribute="top" secondItem="31L-t4-fJw" secondAttribute="bottom" constant="287" id="St1-pJ-D0H"/>
+                            <constraint firstItem="31L-t4-fJw" firstAttribute="top" secondItem="A8E-Nn-O1a" secondAttribute="bottom" constant="8" id="VqY-aK-Nau"/>
                             <constraint firstItem="A8E-Nn-O1a" firstAttribute="centerX" secondItem="Ghr-oC-B9k" secondAttribute="centerX" id="XQW-Kg-WoN"/>
                             <constraint firstItem="A8E-Nn-O1a" firstAttribute="leading" secondItem="Ghr-oC-B9k" secondAttribute="leading" id="Xwz-dc-tu8"/>
                         </constraints>

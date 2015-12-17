@@ -78,6 +78,7 @@
 		AAC0762A1C19E5F700FFCD71 /* sadday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadday.mp3; sourceTree = "<group>"; };
 		AAC0762B1C19E5F700FFCD71 /* slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slowmotion.mp3; sourceTree = "<group>"; };
 		AAC0762C1C19E5F700FFCD71 /* tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomorrow.mp3; sourceTree = "<group>"; };
+		AAF5565A1C22403B009BC1B7 /* sessionOver.m4a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sessionOver.m4a.mp4; sourceTree = "<group>"; };
 		C34AEA78A2CCA39097430590 /* Pods-GetWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetWell.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetWell/Pods-GetWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +177,7 @@
 		AAC076211C19E5F700FFCD71 /* MusicFile */ = {
 			isa = PBXGroup;
 			children = (
+				AAF5565A1C22403B009BC1B7 /* sessionOver.m4a.mp4 */,
 				AAC076221C19E5F700FFCD71 /* acousticbreeze.mp3 */,
 				AAC076231C19E5F700FFCD71 /* betterdays.mp3 */,
 				AAC076241C19E5F700FFCD71 /* deepblue.mp3 */,
