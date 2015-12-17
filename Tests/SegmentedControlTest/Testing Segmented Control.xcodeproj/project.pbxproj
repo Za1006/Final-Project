@@ -12,7 +12,6 @@
 		4CA20B541C207E6B00DA57DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B521C207E6B00DA57DA /* Main.storyboard */; };
 		4CA20B561C207E6B00DA57DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B551C207E6B00DA57DA /* Assets.xcassets */; };
 		4CA20B591C207E6B00DA57DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B571C207E6B00DA57DA /* LaunchScreen.storyboard */; };
-		4CA20B611C207FED00DA57DA /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20B601C207FED00DA57DA /* Timers.swift */; };
 		4CA20B681C20A44200DA57DA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA20B671C20A44200DA57DA /* Song.swift */; };
 		4CA20B6C1C20AADF00DA57DA /* happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */; };
 		4CA20B6E1C20CFCF00DA57DA /* sessionOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */; };
@@ -38,7 +37,6 @@
 		4CA20B551C207E6B00DA57DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA20B581C207E6B00DA57DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA20B5A1C207E6B00DA57DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CA20B601C207FED00DA57DA /* Timers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
 		4CA20B671C20A44200DA57DA /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		4CA20B6B1C20AADF00DA57DA /* happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = happiness.mp3; path = ../happiness.mp3; sourceTree = "<group>"; };
 		4CA20B6D1C20B42C00DA57DA /* sessionOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = sessionOver.m4a; path = ../sessionOver.m4a; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 		4CA20B4D1C207E6B00DA57DA /* Testing Segmented Control */ = {
 			isa = PBXGroup;
 			children = (
-				4CA20B601C207FED00DA57DA /* Timers.swift */,
 				4CA20B671C20A44200DA57DA /* Song.swift */,
 				4CA20B501C207E6B00DA57DA /* Test.swift */,
 				4CA20B521C207E6B00DA57DA /* Main.storyboard */,
@@ -215,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA20B511C207E6B00DA57DA /* Test.swift in Sources */,
-				4CA20B611C207FED00DA57DA /* Timers.swift in Sources */,
 				4CA20B4F1C207E6B00DA57DA /* AppDelegate.swift in Sources */,
 				4CA20B681C20A44200DA57DA /* Song.swift in Sources */,
 			);
