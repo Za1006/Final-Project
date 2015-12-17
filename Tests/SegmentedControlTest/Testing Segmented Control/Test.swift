@@ -189,6 +189,11 @@ class MainController: UIViewController
         togglePlayback(true)
     }
     
+    @IBAction func playPauseTapped(sender: UIButton)
+    {
+        togglePlayback(!nowPlaying)
+    }
+    
     
 }
 

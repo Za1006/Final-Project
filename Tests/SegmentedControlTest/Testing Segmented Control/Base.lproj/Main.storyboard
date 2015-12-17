@@ -18,10 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nCu-Og-gUa">
-                                <rect key="frame" x="220" y="286" width="161" height="29"/>
+                                <rect key="frame" x="179" y="286" width="242" height="29"/>
                                 <segments>
                                     <segment title="5 Minutes"/>
                                     <segment title="10 Minutes"/>
+                                    <segment title="15 Minutes"/>
                                 </segments>
                                 <connections>
                                     <action selector="changedSortedCriteria:" destination="BYZ-38-t0r" eventType="valueChanged" id="vhE-LT-CGP"/>
@@ -30,7 +31,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vld-KS-dgq">
                                 <rect key="frame" x="278" y="384" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmG-50-SME">
@@ -47,17 +48,26 @@
                                     <action selector="skipForwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqh-LJ-7DC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfU-I3-mUK">
+                                <rect key="frame" x="279" y="210" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="playPauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zid-ED-Uo0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vld-KS-dgq" firstAttribute="top" secondItem="nCu-Og-gUa" secondAttribute="bottom" constant="70" id="2UY-Te-GkY"/>
                             <constraint firstItem="NDl-Ex-P6G" firstAttribute="top" secondItem="nCu-Og-gUa" secondAttribute="bottom" constant="21" id="3vn-rw-LsT"/>
+                            <constraint firstItem="pfU-I3-mUK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PQA-co-zb9"/>
                             <constraint firstItem="nCu-Og-gUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rqa-Zh-bZg"/>
                             <constraint firstItem="NDl-Ex-P6G" firstAttribute="centerX" secondItem="nCu-Og-gUa" secondAttribute="centerX" id="Xje-bd-07D"/>
                             <constraint firstItem="nCu-Og-gUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xz5-Sw-d7l"/>
                             <constraint firstItem="wmG-50-SME" firstAttribute="top" secondItem="vld-KS-dgq" secondAttribute="bottom" constant="34" id="lSx-VC-qwf"/>
                             <constraint firstItem="vld-KS-dgq" firstAttribute="centerX" secondItem="nCu-Og-gUa" secondAttribute="centerX" id="nSX-kc-bbj"/>
                             <constraint firstItem="wmG-50-SME" firstAttribute="centerX" secondItem="vld-KS-dgq" secondAttribute="centerX" id="spu-wq-DFv"/>
+                            <constraint firstItem="pfU-I3-mUK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="yPH-jL-5Dp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BTz-gM-Ebg"/>
