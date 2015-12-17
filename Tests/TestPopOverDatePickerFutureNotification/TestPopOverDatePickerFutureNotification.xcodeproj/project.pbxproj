@@ -54,14 +54,22 @@
 		4C870F0F1C2240E400209B3B /* TestPopOverDatePickerFutureNotification */ = {
 			isa = PBXGroup;
 			children = (
-				4C870F101C2240E400209B3B /* AppDelegate.swift */,
 				4C870F121C2240E400209B3B /* ViewController.swift */,
 				4C870F141C2240E400209B3B /* Main.storyboard */,
+				4C870F221C2244CB00209B3B /* Misc */,
+			);
+			path = TestPopOverDatePickerFutureNotification;
+			sourceTree = "<group>";
+		};
+		4C870F221C2244CB00209B3B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				4C870F101C2240E400209B3B /* AppDelegate.swift */,
 				4C870F171C2240E400209B3B /* Assets.xcassets */,
 				4C870F191C2240E400209B3B /* LaunchScreen.storyboard */,
 				4C870F1C1C2240E400209B3B /* Info.plist */,
 			);
-			path = TestPopOverDatePickerFutureNotification;
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

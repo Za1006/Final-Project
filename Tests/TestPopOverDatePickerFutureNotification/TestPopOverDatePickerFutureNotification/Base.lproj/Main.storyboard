@@ -16,18 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Reminder Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-AT-dh4">
+                                <rect key="frame" x="223" y="72" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="56U-AT-dh4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6ak-GP-j0y"/>
+                            <constraint firstItem="56U-AT-dh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeW-go-MS4"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="60z-Ua-gDb"/>
+                    <navigationItem key="navigationItem" id="60z-Ua-gDb">
+                        <barButtonItem key="rightBarButtonItem" title="Set Reminder" id="Nbr-bd-qh1">
+                            <connections>
+                                <segue destination="e94-yH-UYs" kind="show" identifier="SetReminderSegue" id="gS0-Np-d20"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nextMeditation" destination="56U-AT-dh4" id="uU6-sJ-gt9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--Pop OverVC-->
         <scene sceneID="R6a-CS-ocX">
             <objects>
-                <viewController id="e94-yH-UYs" sceneMemberID="viewController">
+                <viewController id="e94-yH-UYs" customClass="PopOverVC" customModule="TestPopOverDatePickerFutureNotification" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dc4-Lt-HPw"/>
                         <viewControllerLayoutGuide type="bottom" id="6aa-HM-wAK"/>
@@ -35,12 +56,36 @@
                     <view key="view" contentMode="scaleToFill" id="N2c-1v-SCJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-hL-5lP">
+                                <rect key="frame" x="0.0" y="64" width="600" height="236"/>
+                                <date key="date" timeIntervalSinceReferenceDate="472007395.22226202">
+                                    <!--2015-12-17 01:09:55 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYM-ha-J8X">
+                                <rect key="frame" x="282" y="325" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TqV-hL-5lP" secondAttribute="trailing" id="4dM-WG-7F9"/>
+                            <constraint firstItem="JYM-ha-J8X" firstAttribute="centerX" secondItem="TqV-hL-5lP" secondAttribute="centerX" id="4sd-Lb-FlA"/>
+                            <constraint firstItem="TqV-hL-5lP" firstAttribute="leading" secondItem="N2c-1v-SCJ" secondAttribute="leading" id="Fp3-sc-yXC"/>
+                            <constraint firstItem="JYM-ha-J8X" firstAttribute="top" secondItem="TqV-hL-5lP" secondAttribute="bottom" constant="25" id="MPl-fQ-P4K"/>
+                            <constraint firstItem="TqV-hL-5lP" firstAttribute="top" secondItem="dc4-Lt-HPw" secondAttribute="bottom" id="khg-9U-5DO"/>
+                            <constraint firstItem="6aa-HM-wAK" firstAttribute="top" secondItem="TqV-hL-5lP" secondAttribute="bottom" constant="300" id="uCz-dF-iNq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="TqV-hL-5lP" id="Kuz-AP-qRq"/>
+                        <outlet property="doneButton" destination="JYM-ha-J8X" id="v9G-Lj-hsa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7q-uf-L1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1794" y="389"/>
+            <point key="canvasLocation" x="1834" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8wR-cD-3YQ">
@@ -58,7 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oZ-NQ-WSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="-303"/>
+            <point key="canvasLocation" x="423" y="389"/>
         </scene>
     </scenes>
 </document>
