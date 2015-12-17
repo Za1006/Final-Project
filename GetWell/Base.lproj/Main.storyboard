@@ -73,7 +73,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s05-uJ-TmJ">
                                 <rect key="frame" x="10" y="291" width="580" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="10" y="294" width="380" height="30"/>
                                 </variation>
@@ -186,7 +186,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-jA-8xg">
-                                <rect key="frame" x="41" y="392" width="519" height="33"/>
+                                <rect key="frame" x="20" y="399" width="560" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Skip to Session">
                                     <color key="titleColor" red="0.14206403493881226" green="0.33095026016235352" blue="0.68009668588638306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,7 +198,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.84313725490196079" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0EH-jA-8xg" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="41" id="0Wc-jp-Suh"/>
+                            <constraint firstItem="0EH-jA-8xg" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="20" id="0Wc-jp-Suh"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="813-8G-fTa"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-46" id="A5j-Z7-nQE"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
@@ -208,15 +208,16 @@
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" constant="10" id="Ke1-dY-gol"/>
                             <constraint firstItem="0EH-jA-8xg" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="M7y-Sd-RVG"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" id="STl-vE-kaT"/>
+                            <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="0EH-jA-8xg" secondAttribute="bottom" constant="168" id="VwU-Hf-NEo"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" constant="20" id="ZfJ-0g-zjN"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="eRx-W5-GbZ"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="ed7-tf-3cy"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="gFj-3h-GdU"/>
-                            <constraint firstAttribute="trailing" secondItem="0EH-jA-8xg" secondAttribute="trailing" constant="40" id="l7f-BU-lQq"/>
+                            <constraint firstAttribute="trailing" secondItem="0EH-jA-8xg" secondAttribute="trailing" constant="20" id="l7f-BU-lQq"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="mnn-Wh-YSu"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="noI-iS-aFG"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="20" id="qLc-EE-Zcj"/>
-                            <constraint firstItem="0EH-jA-8xg" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="8" id="wYF-lH-PRZ"/>
+                            <constraint firstItem="0EH-jA-8xg" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="15" id="wYF-lH-PRZ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -243,6 +244,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nextMeditation" destination="xA2-Rm-AVe" id="och-PU-mPg"/>
+                        <outlet property="skipToSession" destination="0EH-jA-8xg" id="yp9-fP-epO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,7 +300,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="timeCountdown" destination="31L-t4-fJw" id="1HR-0K-ckW"/>
+                        <outlet property="meditationCountdown" destination="31L-t4-fJw" id="bTH-O5-7bJ"/>
                         <outlet property="timeSegmentedControl" destination="A8E-Nn-O1a" id="VDV-7l-yF3"/>
                     </connections>
                 </viewController>
@@ -325,6 +330,9 @@
                                 <rect key="frame" x="276" y="564" width="48" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneWasPressed:" destination="SMz-HM-tvb" eventType="touchUpInside" id="Vz8-9o-a8X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

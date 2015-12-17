@@ -46,8 +46,11 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     }
     
     
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(true)
     
-    
+    }
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -62,8 +65,8 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
         {
             let destVC = segue.destinationViewController as! SetReminderPopOverViewController
                 destVC.popoverPresentationController?.delegate = self
-            let contentHeight = 50.0 * CGFloat(remainingCharacters.count)
-                destVC.preferredContentSize = CGSizeMake(400.0, contentHeight)
+            destVC.delegate = self
+                destVC.preferredContentSize = CGSizeMake(400.0, 216.0)
         }
     }
     
@@ -100,7 +103,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     func dateFormat(x: NSDate) -> String
     {
         let formatter = NSDateFormatter()
-        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy", options: 0, locale: NSLocale.currentLocale())
+        formatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("MMM dd yyyy HH:mm", options: 0, locale: NSLocale.currentLocale())
         let formattedTime = formatter.stringFromDate(x).uppercaseString
         
         return String(formattedTime)

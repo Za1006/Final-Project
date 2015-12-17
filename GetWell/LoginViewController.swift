@@ -37,6 +37,11 @@ class LoginViewController: UIViewController
         return false
     }
     
+
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(true)
+    }
     
     @IBAction func signInTapped(sender: UIButton)
 //    signIn can be UIBarbutton Item if we want.
