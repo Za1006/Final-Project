@@ -58,8 +58,13 @@ class LoginViewController: UIViewController
                 }
                 else
                 {
-                    print(error?.localizedDescription)
-                }
+//                    if let error = error
+//                    {
+//                        let errorString = error.userInfo[] as? NSString
+                    
+                        print(error?.localizedDescription)
+
+                    }
             }
         }
     }
