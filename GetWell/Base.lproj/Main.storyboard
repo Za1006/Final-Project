@@ -179,12 +179,6 @@
                                     <constraint firstAttribute="height" constant="320" id="2v0-r7-DrH"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, John" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA2-Rm-AVe">
-                                <rect key="frame" x="224" y="69" width="153" height="41"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
-                                <color key="textColor" red="0.96439627314430454" green="1" blue="0.02964774528058689" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-jA-8xg">
                                 <rect key="frame" x="20" y="399" width="560" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -192,24 +186,36 @@
                                     <color key="titleColor" red="0.14206403493881226" green="0.33095026016235352" blue="0.68009668588638306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="skipToSessionTapped:" destination="mtC-ec-np1" eventType="touchUpInside" id="mZJ-sB-YhP"/>
                                     <segue destination="4t6-Ik-EYg" kind="show" identifier="ShowMediaSegue" id="hMe-Rv-LlX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set next Meditation " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA2-Rm-AVe">
+                                <rect key="frame" x="20" y="72" width="560" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                <color key="textColor" red="0.96439627314430454" green="1" blue="0.02964774528058689" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50588235294117645" green="0.84313725490196079" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0EH-jA-8xg" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="20" id="0Wc-jp-Suh"/>
+                            <constraint firstItem="xA2-Rm-AVe" firstAttribute="leading" secondItem="llJ-GZ-HaR" secondAttribute="trailing" constant="-580" id="28D-JV-ghh"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" id="813-8G-fTa"/>
-                            <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-46" id="A5j-Z7-nQE"/>
+                            <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-49" id="A5j-Z7-nQE"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="llJ-GZ-HaR" secondAttribute="bottom" constant="230" id="BzI-q9-aU1"/>
+                            <constraint firstItem="xA2-Rm-AVe" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" constant="8" id="Gvl-XM-k6e"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="-29" id="Gx5-gZ-PIq"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" id="HL9-rM-Rso"/>
+                            <constraint firstAttribute="trailing" secondItem="xA2-Rm-AVe" secondAttribute="trailing" constant="20" id="J4k-YJ-OxZ"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" constant="15" id="KDg-1V-Fxa"/>
                             <constraint firstItem="xA2-Rm-AVe" firstAttribute="centerX" secondItem="llJ-GZ-HaR" secondAttribute="centerX" constant="10" id="Ke1-dY-gol"/>
                             <constraint firstItem="0EH-jA-8xg" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="M7y-Sd-RVG"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" id="STl-vE-kaT"/>
                             <constraint firstItem="6PW-3v-N1L" firstAttribute="top" secondItem="0EH-jA-8xg" secondAttribute="bottom" constant="168" id="VwU-Hf-NEo"/>
                             <constraint firstAttribute="trailing" secondItem="llJ-GZ-HaR" secondAttribute="trailing" constant="20" id="ZfJ-0g-zjN"/>
+                            <constraint firstItem="xA2-Rm-AVe" firstAttribute="leading" secondItem="KgU-1a-JYb" secondAttribute="leading" constant="20" id="cze-c9-AWz"/>
+                            <constraint firstItem="0EH-jA-8xg" firstAttribute="top" secondItem="xA2-Rm-AVe" secondAttribute="bottom" constant="286" id="dXt-qU-wK0"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="eRx-W5-GbZ"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="centerX" secondItem="KgU-1a-JYb" secondAttribute="centerX" id="ed7-tf-3cy"/>
                             <constraint firstItem="llJ-GZ-HaR" firstAttribute="top" secondItem="bKW-0s-sCW" secondAttribute="bottom" id="gFj-3h-GdU"/>
@@ -245,8 +251,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nextMeditation" destination="xA2-Rm-AVe" id="och-PU-mPg"/>
-                        <outlet property="skipToSession" destination="0EH-jA-8xg" id="yp9-fP-epO"/>
+                        <outlet property="nextMeditation" destination="xA2-Rm-AVe" id="nTd-0T-Jqb"/>
+                        <outlet property="skipToSession" destination="0EH-jA-8xg" id="QVE-pS-Q23"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-iI-ZxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

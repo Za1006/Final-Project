@@ -46,11 +46,7 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     }
     
     
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(true)
-    
-    }
+  
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
@@ -75,7 +71,6 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle
     {
         return UIModalPresentationStyle.None
-        //can also just type return .None
     }
     
     
@@ -114,9 +109,11 @@ class MainViewController: UIViewController, UIPopoverPresentationControllerDeleg
     {
         
     }
-    
-
   
+    @IBAction func skipToSessionTapped(sender: UIButton)
+    {
+        
+    }
     // MARK: Steps_Check_List (TableView)
     
 }
