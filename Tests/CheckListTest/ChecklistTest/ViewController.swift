@@ -159,3 +159,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 }
 
+// button.hidden = true
+// button.enabled = false in rows in section if rows == 3
+// index 0 of array
+

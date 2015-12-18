@@ -21,16 +21,12 @@ class ViewController: UIViewController, DatePickerDelegate, UIPopoverPresentatio
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    // MARK - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
@@ -41,8 +37,6 @@ class ViewController: UIViewController, DatePickerDelegate, UIPopoverPresentatio
             destVC.preferredContentSize = CGSizeMake(400.0, 600)
         }
     }
-    
-    // MARK: DatePicker Delegate
     
     func dateWasChosen(date: NSDate)
     {
@@ -69,8 +63,6 @@ class ViewController: UIViewController, DatePickerDelegate, UIPopoverPresentatio
         return String(formattedTime)
     
     }
-    
-    // MARK: - UIPopoverPresentationController Delegate
     
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle
     {
